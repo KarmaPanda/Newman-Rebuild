@@ -1,1 +1,12 @@
 @import "~bootstrap/scss/bootstrap.scss";
+
+.navbar-light .navbar-nav .nav-link {
+  color: #00467f !important;
+  padding: 0 15px;
+  flex-wrap: nowrap;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: black !important;
+}
+
