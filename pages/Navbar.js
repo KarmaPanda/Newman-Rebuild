@@ -5,7 +5,7 @@ export default function Navbar() {
         <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-light">
             <div className="container-fluid">
                 <a className="navbar-brand" href="/">
-                    <Image src="/images/navbar/banner.png" width={183} height={59}/>
+                    <Image src="/images/navbar/banner.png" width={183} height={59} alt={"Navbar Logo"}/>
                 </a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
