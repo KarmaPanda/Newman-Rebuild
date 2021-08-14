@@ -1,9 +1,9 @@
 import Head from 'next/head'
-import Navbar from "./Navbar";
 import Hero from "./Hero";
 import TextSignUp from "./TextSignUp";
 import HeroCarousel from "./HeroCarousel";
 import StudentCarousel from "./StudentCarousel";
+import WeeklySchedule from "./WeeklySchedule";
 
 export default function Home() {
     return (
@@ -14,17 +14,14 @@ export default function Home() {
                 <meta name="description" content="Catholic Community at the University of Rochester"/>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
-            <Navbar/>
+
             <HeroCarousel/>
             <Hero/>
             <TextSignUp/>
-
-            {/* TODO: Add Student Testimonial Carousel */}
-
             <StudentCarousel/>
 
             {/* TODO: Add Schedule */}
-
+            <WeeklySchedule/>
 
 
             {/* TODO: Add Other Information and More Resources */}
