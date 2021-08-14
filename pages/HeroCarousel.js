@@ -1,9 +1,4 @@
-import Link from 'next/link'
-import Image from 'next/image'
-import styles from '../styles/HeroCarousel.module.scss'
-
 export default function HeroCarousel() {
-
     return (
         <div id="HeroCarousel" className="carousel slide" data-bs-ride="carousel" data-touch="true">
             <div className="carousel-indicators">
@@ -17,7 +12,7 @@ export default function HeroCarousel() {
                 <div className="carousel-item active">
                     <picture>
                         <source media="(min-width:1000px)" srcSet="/images/index/1.png"/>
-                        <img width="100%" src="/images/index/1-mobile.png"/>
+                        <img width="100%" src="/images/index/1-mobile.png" alt="Summer 2021 Newman"/>
                     </picture>
 
                     {/*<div className="container">
@@ -32,7 +27,7 @@ export default function HeroCarousel() {
                 <div className="carousel-item">
                     <picture>
                         <source media="(min-width:1000px)" srcSet="/images/index/2.png"/>
-                        <img width="100%" src="/images/index/2-mobile.png"/>
+                        <img width="100%" src="/images/index/2-mobile.png" alt="Sunday Mass at 10:30AM, InstaPrayer at Wednesday 9PM"/>
                     </picture>
 
                     {/*<div className="carousel-caption">
@@ -49,7 +44,7 @@ export default function HeroCarousel() {
                     <a href="/giving/annual-appeal">
                         <picture>
                             <source media="(min-width:1000px)" srcSet="/images/index/3.png"/>
-                            <img width="100%" src="/images/index/3-mobile.png"/>
+                            <img width="100%" src="/images/index/3-mobile.png" alt="Donate to our ministry here"/>
                         </picture>
                     </a>
 
@@ -65,7 +60,7 @@ export default function HeroCarousel() {
                     <a href="/building">
                         <picture>
                             <source media="(min-width:1000px)" srcSet="/images/index/4.png"/>
-                            <img width="100%" src="/images/index/4-mobile.png"/>
+                            <img width="100%" src="/images/index/4-mobile.png" alt="Click to learn about our building project"/>
                         </picture>
                     </a>
                 </div>

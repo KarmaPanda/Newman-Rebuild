@@ -1,10 +1,9 @@
 import Head from 'next/head'
-import Link from 'next/link'
-import Image from 'next/image'
 import Navbar from "./Navbar";
 import Hero from "./Hero";
 import TextSignUp from "./TextSignUp";
 import HeroCarousel from "./HeroCarousel";
+import StudentCarousel from "./StudentCarousel";
 
 export default function Home() {
     return (
@@ -22,7 +21,11 @@ export default function Home() {
 
             {/* TODO: Add Student Testimonial Carousel */}
 
+            <StudentCarousel/>
+
             {/* TODO: Add Schedule */}
+
+
 
             {/* TODO: Add Other Information and More Resources */}
 

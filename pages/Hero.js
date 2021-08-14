@@ -1,6 +1,6 @@
 export default function Hero() {
     return (
-        <div className="px-4 py-5 my-5 text-center border-bottom">
+        <div className="px-4 my-5 text-center newman-secondary-color">
             <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
                 <div className="col-lg-6 mx-auto">
                     <h1 className="display-4 fw-bold">UR Newman</h1>
