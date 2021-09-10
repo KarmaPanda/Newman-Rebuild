@@ -38,6 +38,66 @@
   padding: 10px;
 }
 
+.footer-content {
+  background-color: #00467f;
+  color: white;
+  text-align: center;
+}
+
+.footer-content a {
+  text-decoration: none;
+  word-wrap: break-word;
+  color: rgba(255, 255, 255, .7);
+}
+
+.footer-phone, .footer-email, .footer-location {
+  margin-bottom: 3em;
+}
+
+.footer-location iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding: 10px;
+}
+
+.footer-social-media a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.guidestar img {
+  width: 100%;
+  max-height: 250px;
+}
+
+footer {
+  text-align: center;
+}
+
+.footer-icons {
+  display: flow-root;
+  align-items: center;
+  padding: 20px;
+}
+
+.footer-icons img {
+  max-width: 350px;
+  height: 180px;
+  padding: 20px;
+}
+
+.small-print {
+  font-weight: 300;
+}
+
+.small-print a {
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+}
+
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
