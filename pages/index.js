@@ -19,10 +19,7 @@ export default function Home() {
             <Hero/>
             <TextSignUp/>
             <StudentCarousel/>
-
-            {/* TODO: Add Schedule */}
             <WeeklySchedule/>
-
 
             {/* TODO: Add Other Information and More Resources */}
 
