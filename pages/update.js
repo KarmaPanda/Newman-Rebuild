@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-export default function Staff() {
+export default function Update() {
     return(
         <div>
             <Head>

@@ -4,6 +4,8 @@ import TextSignUp from "./TextSignUp";
 import HeroCarousel from "./HeroCarousel";
 import StudentCarousel from "./StudentCarousel";
 import WeeklySchedule from "./WeeklySchedule";
+import HeaderNotification from "./HeaderNotification";
+import HeroButttons from "./HeroButttons";
 
 export default function Home() {
     return (
@@ -14,9 +16,9 @@ export default function Home() {
                 <meta name="description" content="Catholic Community at the University of Rochester"/>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
-
+            <HeaderNotification/>
             <HeroCarousel/>
-            <Hero/>
+            <HeroButttons/>
             <TextSignUp/>
             <StudentCarousel/>
             <WeeklySchedule/>
