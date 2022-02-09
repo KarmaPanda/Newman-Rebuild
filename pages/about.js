@@ -1,5 +1,5 @@
 import Head from "next/head";
-import SubPageCard from "./SubPageCard";
+import SubPageCard from "../components/SubPageCard";
 
 export default function About() {
     return (
@@ -21,7 +21,7 @@ export default function About() {
                         <SubPageCard name="Staff" img="/images/about/1.png"
                                      description="You can find all of our current staff here." link="/groups/staff"/>
                         <SubPageCard name="Student Leadership" img="/images/about/2.png"
-                                     description="You can find all of our current student leaders here." link="/groups/staff"/>
+                                     description="You can find all of our current student leaders here." link="/groups/student-leadership"/>
                         <SubPageCard name="Awards" img="/images/about/3.jpg"
                                      description="See all of our past awards here." link="/awards"/>
                     </div>

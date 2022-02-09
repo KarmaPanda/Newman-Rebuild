@@ -1,5 +1,5 @@
 import Head from "next/head";
-import SubPageCard from "./SubPageCard";
+import SubPageCard from "../components/SubPageCard";
 
 export default function Events() {
     return (

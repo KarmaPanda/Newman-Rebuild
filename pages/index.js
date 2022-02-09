@@ -1,11 +1,11 @@
 import Head from 'next/head'
-import Hero from "./Hero";
-import TextSignUp from "./TextSignUp";
-import HeroCarousel from "./HeroCarousel";
-import StudentCarousel from "./StudentCarousel";
-import WeeklySchedule from "./WeeklySchedule";
-import HeaderNotification from "./HeaderNotification";
-import HeroButttons from "./HeroButttons";
+import Hero from "../components/Hero";
+import TextSignUp from "../components/TextSignUp";
+import HeroCarousel from "../components/HeroCarousel";
+import StudentCarousel from "../components/StudentCarousel";
+import WeeklySchedule from "../components/WeeklySchedule";
+import HeaderNotification from "../components/HeaderNotification";
+import HeroButttons from "../components/HeroButttons";
 
 export default function Home() {
     return (

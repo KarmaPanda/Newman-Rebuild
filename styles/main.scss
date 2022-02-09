@@ -7,6 +7,10 @@
   background-color: #00467f !important;
 }
 
+.newman-primary-text-color {
+  color: white !important;
+}
+
 .newman-secondary-color {
   //color: #00467f !important;
   background-color: #fac600 !important;
@@ -20,6 +24,10 @@
 
 .navbar-light .navbar-nav .nav-link:hover {
   color: black !important;
+}
+
+.nav-item p {
+  margin-bottom: 0;
 }
 
 .video-container {
@@ -166,4 +174,24 @@ footer {
   font-size: 40px;
   display: inline-block;
   vertical-align: middle;
+}
+
+.staff img {
+  width: 100%;
+  align-self: center;
+}
+
+.staff {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.staff > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
 }

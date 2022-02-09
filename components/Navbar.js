@@ -15,49 +15,48 @@ export default function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav mx-auto mb-lg-1">
                         <li className="nav-item">
-                            <a className="nav-link" href="/about">About</a>
+                            <a className="nav-link" href="/about"><p>About</p></a>
                         </li>
 
                         <li className="nav-item">
-                            <a className="nav-link" href="/building">Building Project</a>
+                            <a className="nav-link" href="/building"><p>Building Project</p></a>
                         </li>
 
                         <li className="nav-item">
-                            <a className="nav-link" href="/calendar">Calendar</a>
+                            <a className="nav-link" href="/calendar"><p>Calendar</p></a>
                         </li>
 
                         <li className="nav-item">
-                            <a className="nav-link" href="https://www.usccb.org/bible/readings/index.cfm">Daily
-                                Readings</a>
+                            <a className="nav-link" href="https://www.usccb.org/bible/readings/index.cfm"><p>Daily
+                                Readings</p></a>
                         </li>
 
                         <li className="nav-item">
-                            <a className="nav-link" href="/events">Events</a>
+                            <a className="nav-link" href="/events"><p>Events</p></a>
                         </li>
 
                         <li className="nav-item">
-                            <a className="nav-link" href="/giving">Giving</a>
-                        </li>
-
-
-                        <li className="nav-item">
-                            <a className="nav-link" href="/groups">Groups</a>
+                            <a className="nav-link" href="/giving"><p>Giving</p></a>
                         </li>
 
                         <li className="nav-item">
-                            <a className="nav-link" href="/pub">Publications</a>
+                            <a className="nav-link" href="/groups"><p>Groups</p></a>
                         </li>
 
                         <li className="nav-item">
-                            <a className="nav-link" href="/streaming">Streaming</a>
+                            <a className="nav-link" href="/pub"><p>Publications</p></a>
                         </li>
 
                         <li className="nav-item">
-                            <a className="nav-link" href="/spiritual-life">Spiritual Life</a>
+                            <a className="nav-link" href="/streaming"><p>Streaming</p></a>
                         </li>
 
                         <li className="nav-item">
-                            <a className="nav-link" href="/yespa">Yes Pa</a>
+                            <a className="nav-link" href="/spiritual-life"><p>Spiritual Life</p></a>
+                        </li>
+
+                        <li className="nav-item">
+                            <a className="nav-link" href="/yespa"><p>Yes Pa</p></a>
                         </li>
                     </ul>
                     <form className="d-flex">
