@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react/cjs/react.development'
+import { useState, useEffect } from 'react'
 import styles from '../styles/WeeklySchedule.module.scss'
 
 export default function WeeklySchedule() {
