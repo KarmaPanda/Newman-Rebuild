@@ -2,9 +2,9 @@ import styles from '../styles/StudentCarousel.module.scss'
 import Glide from '@glidejs/glide'
 import {useEffect} from "react";
 
-export default function StudentCarousel() {
+export default function SeniorReflectionCarousel() {
     useEffect(() => {
-        new Glide('.glide', {
+        new Glide('.senior-reflection', {
             type: 'carousel',
             startAt: 0,
             perView: 3,
@@ -22,11 +22,11 @@ export default function StudentCarousel() {
     })
 
     return (
-        <div className="container">
+        <div className="container mt-5">
             <div className="row mb-5">
                 <div className="col">
                     <h1 className="text-center display-6 fw-bold mb-5">Senior Reflections</h1>
-                    <div className="glide">
+                    <div className="senior-reflection">
                         <div className="glide__track" data-glide-el="track">
                             <ul className="glide__slides">
                                 <li className="glide__slide">

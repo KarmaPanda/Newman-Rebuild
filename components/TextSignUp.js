@@ -1,6 +1,6 @@
 export default function TextSignUp() {
     return (
-        <div className="container col-xl-10 col-xxl-8 px-4 py-5 border-bottom mb-5">
+        <div className="container col-xl-10 col-xxl-8 px-4 py-5">
             <div className="row align-items-center g-lg-5 py-5">
                 <div className="col-lg-7 text-center text-lg-start">
                     <h1 className="display-5 fw-bold lh-1 mb-3">Signup for Text Updates</h1>

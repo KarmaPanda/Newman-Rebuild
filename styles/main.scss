@@ -43,7 +43,6 @@
   width: 100%;
   height: 100%;
   border: 0;
-  padding: 10px;
 }
 
 .footer-content {
@@ -194,4 +193,8 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 1em;
+}
+
+.glide_slide {
+  height: auto;
 }

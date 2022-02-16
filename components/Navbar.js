@@ -5,12 +5,12 @@ export default function Navbar() {
         <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-light">
             <div className="container-fluid">
                 <a className="navbar-brand" href="/">
-                    <Image src="/images/navbar/banner.png" width={183} height={59} alt={"Navbar Logo"}/>
+                    <Image src="/images/navbar/banner.png" width={183} height={59} alt={"Navbar Logo"} />
                 </a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"/>
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon" />
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav mx-auto mb-lg-1">
@@ -59,11 +59,11 @@ export default function Navbar() {
                             <a className="nav-link" href="/yespa"><p>Yes Pa</p></a>
                         </li>
                     </ul>
-                    <form className="d-flex">
+                    {/*<form className="d-flex">
                         <input className="form-control me-2" type="search" placeholder="Search"
                                aria-label="Search"/>
                         <button className="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+                    </form>*/}
                 </div>
             </div>
         </nav>
