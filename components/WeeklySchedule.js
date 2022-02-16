@@ -1,37 +1,52 @@
+import { useState, useEffect } from 'react/cjs/react.development'
 import styles from '../styles/WeeklySchedule.module.scss'
 
 export default function WeeklySchedule() {
+    const [schedule, setSchedule] = useState([{
+        event: "Loading",
+        day: "...",
+        time: "...",
+        location: "..."
+    }])
+
+    useEffect(() => {
+        // Fetch schedule from backend.
+        fetch('/api/schedule').then(async res => {
+            let s = await res.json()
+            setSchedule(s.schedule)
+        }).catch(error => {
+            console.error("Unable to fetch schedule data.")
+        })
+    }, [])
+
     return (
         <div className={`${styles.schedule} py-5`}>
-            <i className="fas fa-calendar-check mb-2 fa-4x"/>
+            <i className="fas fa-calendar-check mb-2 fa-4x" />
             <h1 className="text-center display-6 fw-bold mb-5">Weekly Schedule</h1>
 
             <div className="container mb-5">
                 <div className="row">
                     <div className="col-sm-12 table-responsive">
-                        <table className="table" style={ { color: "white" }}>
+                        <table className="table" style={{ color: "white" }}>
                             <thead>
-                            <tr>
-                                <th scope="col">Event</th>
-                                <th scope="col">Day</th>
-                                <th scope="col">Time</th>
-                                <th scope="col">Location</th>
-                            </tr>
+                                <tr>
+                                    <th scope="col">Event</th>
+                                    <th scope="col">Day</th>
+                                    <th scope="col">Time</th>
+                                    <th scope="col">Location</th>
+                                </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                <td scope="row"><a href="events/mass">Mass</a></td>
-                                <td>Sunday</td>
-                                <td>10:30AM</td>
-                                <td>Interfaith Chapel (River Level) and <a href="/streaming">Live
-                                    Streaming</a></td>
-                            </tr>
-                            <tr>
-                                <td scope="row"><a href="calendar">InstaPrayer</a></td>
-                                <td>Wednesday</td>
-                                <td>9PM</td>
-                                <td><a href="https://rochester.zoom.us/j/2771228739">Zoom</a></td>
-                            </tr>
+                                {
+                                    schedule.map((s, key) => {
+                                        return <tr key={key}>
+                                            <td scope="row" dangerouslySetInnerHTML={{ __html: s.event }}></td>
+                                            <td dangerouslySetInnerHTML={{ __html: s.day }}></td>
+                                            <td dangerouslySetInnerHTML={{ __html: s.time }}></td>
+                                            <td dangerouslySetInnerHTML={{ __html: s.location }}></td>
+                                        </tr>
+                                    })
+                                }
                             </tbody>
                         </table>
                     </div>
@@ -41,7 +56,7 @@ export default function WeeklySchedule() {
             <div className="container">
                 <div className="row">
                     <div className="col-sm-6">
-                        <i className="fas fa-file-alt fa-3x"/>
+                        <i className="fas fa-file-alt fa-3x" />
                         <h2 className="section-heading">Other Information</h2>
                         <h3><em>Holy Days of Obligation and Feast Days</em></h3>
                         <p>Holy Day of Obligation Masses are held at 12:30PM and Feast Day Masses
@@ -73,7 +88,7 @@ export default function WeeklySchedule() {
                             penitential resources.</p>
                     </div>
                     <div className="col-sm-6">
-                        <i className="fas fa-scroll fa-3x"/>
+                        <i className="fas fa-scroll fa-3x" />
                         <h2 className="section-heading">More Resources</h2>
                         <h3><em>Celebrate the Psalms</em></h3>
                         <p>Please click <a
