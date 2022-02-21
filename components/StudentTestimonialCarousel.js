@@ -45,7 +45,9 @@ export default function StudentTestimonialCarousel() {
                                         <h5>Computer Science and Political Science Double Major (Computer Science Studies)</h5>
                                         <h5>Class of 2020 and Doctoral Student</h5>
                                     </div>
-                                    <img src="/images/student-testimonial/2.png" />
+                                    <div className="video-container">
+                                        <img src="/images/student-testimonial/2.png" />
+                                    </div>
                                 </li>
                                 <li className="glide__slide">
                                     <div className={styles.videoHeader}>
@@ -63,7 +65,9 @@ export default function StudentTestimonialCarousel() {
                                         <h5>Environmental Sciences Major</h5>
                                         <h5>Class of 2020</h5>
                                     </div>
-                                    <img src="/images/student-testimonial/1.png" />
+                                    <div className="video-container">
+                                        <img src="/images/student-testimonial/1.png" />
+                                    </div>
                                 </li>
                                 <li className="glide__slide">
                                     <div className={styles.videoHeader}>

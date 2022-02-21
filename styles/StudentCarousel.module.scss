@@ -4,10 +4,10 @@
 }
 
 .videoHeader h4 {
-  font-size: 30px;
+  font-size: calc(1em + 1vmin);
 }
 
 .videoHeader h5 {
-  font-size: 0.9vw;
+  font-size: calc(0.75em + 1vmin);
   font-weight: normal;
 }

@@ -16,6 +16,10 @@
   background-color: #fac600 !important;
 }
 
+.navbar-nav {
+  align-items: center;
+}
+
 .navbar-light .navbar-nav .nav-link {
   color: #00467f !important;
   padding: 0 15px;
@@ -36,7 +40,7 @@
   padding-bottom: 56.25%;
 }
 
-.video-container iframe {
+.video-container iframe, .video-container img {
   position: absolute;
   top: 0;
   left: 0;
@@ -170,7 +174,7 @@ footer {
 }
 
 .hero-buttons-item h3 {
-  font-size: 40px;
+  font-size: calc(2em + 1vmin);
   display: inline-block;
   vertical-align: middle;
 }
