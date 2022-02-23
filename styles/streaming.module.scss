@@ -1,0 +1,30 @@
+.iframeContainer {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.videoContainer iframe, .videoContainer object, .videoContainer embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+}
+
+.chatContainer iframe, .chatContainer object, .chatContainer embed {
+    position: absolute;
+    top: 0;
+    left: 70%;
+    width: 30%;
+    height: 100%;
+}
+
+.streaming h4 {
+    font-size: calc(0.5em + 1vmin);
+}
+
+.streaming h5 {
+    font-size: calc(0.25em + 1vmin);
+}
