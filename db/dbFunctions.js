@@ -48,9 +48,11 @@ async function getYoutubeStreamFromDatabase(client) {
 async function updateYoutubeStream(client, videoId) {
     const query = {
         name: 'update-yt-stream',
-        text: 'UPDATE api_results SET livestream_id=$1 WHERE id=$2',
+        text: 'INSERT INTO api_results (id, livestream_id) VALUES($2, $1) ON CONFLICT (id) UPDATE api_results SET livestream_id=$1 WHERE id=$2',
         values: [videoId, 1],
     }
+
+    console.log(query)
 
     await client.query(query).then(res => {
         console.log("[DATABASE] Updated video id to: " + videoId)
