@@ -21,8 +21,12 @@ async function getYoutubeStreamFromDatabase() {
         return null
     });
 
-    //console.log("[GET-YT-STREAM]:", data[0].livestream_id)
-    return data[0].livestream_id
+    if (data.length > 0) {
+        //console.log("[GET-YT-STREAM]:", data[0].livestream_id)
+        return data[0].livestream_id
+    } else {
+        return null
+    }
 }
 
 // TODO: Make cleanup function to delete all livestream ids that are older than a certain time.
