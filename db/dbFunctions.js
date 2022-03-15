@@ -77,10 +77,11 @@ async function updateVideoIdFromAPI() {
             if (youtube.items !== null) {
                 if (youtube.items.length > 0) {
                     videoId = youtube.items[0].id.videoId;
+                    console.log("[YT-API]: New videoId: " + videoId)
                     updateYoutubeStream(videoId)
                 } else {
                     console.error("[YT-API]: No new items to update.")
-                    updateYoutubeStream("0M8uRqczwbY")
+                    updateYoutubeStream("XdMBqIeeADA")
                 }
             } else {
                 console.error("[YT-API]: Error reading items from response data.")
