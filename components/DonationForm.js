@@ -7,6 +7,7 @@ import Router from "next/router";
 
 export default function DonationForm({ backgroundImage, campaign }) {
     const [state, setState] = useState({
+        loading: true,
         name: '',
         email: '',
         classYear: 'N/A',
@@ -140,7 +141,7 @@ export default function DonationForm({ backgroundImage, campaign }) {
         })
     }
 
-    return (
+    return (!state.loading ?
         <div className={`${styles.main}`}>
             <div className={`container ${styles.responsiveContainer}`}>
                 <div className={styles.backgroundWrap}>
@@ -268,6 +269,6 @@ export default function DonationForm({ backgroundImage, campaign }) {
                     </form>
                 </main>
             </div>
-        </div>
+        </div> : null
     )
 }
