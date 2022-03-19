@@ -93,7 +93,7 @@ export default function WeeklySchedule() {
                         <h3><em>Celebrate the Psalms</em></h3>
                         <p>Please click <a
                             href="http://celebratethepsalms.blogspot.com/">here</a> to read
-                            weekly reflections on the Psalms by one of our very own, Rochester alumnus Barry Lamont '64.
+                            weekly reflections on the Psalms by one of our very own, Rochester alumnus Barry Lamont &apos;64.
                             He not
                             only delves into the complexity of these laments/praises to the divine, but relates them to
                             our
@@ -103,7 +103,7 @@ export default function WeeklySchedule() {
                             href="https://cac.org/category/daily-meditations/">here</a> to
                             read a series of daily meditations by famous priest and spiritual writer, Fr. Richard Rohr,
                             O.F.M.
-                            Join him as he seeks to integrate God's endless love with our very own human condition. You
+                            Join him as he seeks to integrate God&apos;s endless love with our very own human condition. You
                             can also
                             sign up to receive these meditations via email.</p>
                         <h3><em>The Examen with James Martin</em></h3>

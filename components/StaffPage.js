@@ -16,7 +16,7 @@ export default function StaffPage({ title, description, members = [], buttons = 
             <div className="container pb-5 newman-primary-text-color">
                 {
                     members.map(member =>
-                        <div className="row staff">
+                        <div className="row staff" key={member.name}>
                             <div className="col-md-6">
                                 <img src={member.image} />
                             </div>

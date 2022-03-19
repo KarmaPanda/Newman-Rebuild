@@ -65,24 +65,24 @@ export default function Home() {
                     <div className="footer-social-media row p-5">
                         <div className="row">
                             <div className="col-sm mb-5 mb-sm-0">
-                                <a href="https://www.instagram.com/ur_newman/" target="_blank"
+                                <a href="https://www.instagram.com/ur_newman/" target="_blank" rel="noreferrer"
                                 ><i className="fa fa-instagram fa-5x" aria-hidden="true" /></a>
                             </div>
                             <div className="col-sm mb-5 mb-sm-0">
-                                <a href="https://www.facebook.com/newmanatur" target="_blank"
+                                <a href="https://www.facebook.com/newmanatur" target="_blank" rel="noreferrer"
                                 ><i className="fa fa-facebook-official fa-5x" aria-hidden="true" /></a>
                             </div>
                             <div className="col-sm mb-5 mb-sm-0">
-                                <a href="https://twitter.com/ur_newman" target="_blank"
+                                <a href="https://twitter.com/ur_newman" target="_blank" rel="noreferrer"
                                 ><i className="fa fa-twitter-square fa-5x" aria-hidden="true" /></a>
                             </div>
                             <div className="col-sm mb-5 mb-sm-0">
-                                <a href="https://www.linkedin.com/company/urnewman" target="_blank"
+                                <a href="https://www.linkedin.com/company/urnewman" target="_blank" rel="noreferrer"
                                 ><i className="fa fa-linkedin-square fa-5x" aria-hidden="true" /></a>
                             </div>
                             <div className="col-sm">
                                 <a href="https://www.youtube.com/c/CatholicNewmanCommunityattheUniversityofRochester"
-                                    target="_blank"><i
+                                    target="_blank" rel="noreferrer"><i
                                         className="fa fa-youtube-play fa-5x" aria-hidden="true" /></a>
                             </div>
                         </div>
@@ -94,12 +94,12 @@ export default function Home() {
                             from local parishes in your area, including ours!</em></h2>
                     </div>
                     <div className="row guidestar">
-                        <a href="https://www.guidestar.org/profile/16-0960620" target="_blank"><img
+                        <a href="https://www.guidestar.org/profile/16-0960620" target="_blank" rel="noreferrer"><img
                             src="https://widgets.guidestar.org/gximage2?o=9500117&amp;l=v4" alt="Guidestar" /></a>
                     </div>
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </div>
     )
 }

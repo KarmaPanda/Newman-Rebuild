@@ -1,9 +1,9 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 const checkoutNodeJssdk = require('@paypal/checkout-server-sdk');
 const payPalClient = require('../../scripts/PayPal');
-const Donations = require("./models/Donations");
+const Donations = require("../../db/models/Donations");
 
-export default (req, res) => {
+const checkout = async (req, res) => {
     if (req.method !== 'POST') {
         res.status(405).send({ message: 'Only POST requests allowed' })
     }
@@ -73,3 +73,5 @@ export default (req, res) => {
         }
     }
 }
+
+export default checkout;

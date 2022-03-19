@@ -7,7 +7,7 @@ export default function Hero({ title, description, buttons }) {
                     <p className="lead mb-4">{description}</p>
 
                     {buttons.map(button =>
-                        <a href={button.link}><button type="button" className="btn btn-primary btn-lg px-2 me-md-2">{button.description}</button></a>
+                        <a href={button.link} key={button.link}><button type="button" className="btn btn-primary btn-lg px-2 me-md-2">{button.description}</button></a>
                     )}
 
                     {/*<div className="d-grid gap-2 d-sm-flex justify-content-sm-center">

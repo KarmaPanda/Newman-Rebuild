@@ -2,7 +2,7 @@ import { getYoutubeStreamFromDatabase } from '../../db/dbFunctions';
 
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
-export default (req, res) => {
+const streaming = (req, res) => {
     getYoutubeStreamFromDatabase().then(response => {
         console.log("[streaming.js]:", response)
         res.status(200).json({
@@ -14,3 +14,5 @@ export default (req, res) => {
         })
     })
 }
+
+export default streaming;

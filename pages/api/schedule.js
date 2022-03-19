@@ -1,6 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
-export default (req, res) => {
+const schedule = (req, res) => {
     // TODO: Store all schedules into DB and add interface to add/remove schedule items.
     res.status(200).json(
         {
@@ -105,3 +105,5 @@ export default (req, res) => {
         }
     )
 }  
+
+export default schedule;
