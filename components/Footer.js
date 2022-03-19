@@ -1,6 +1,6 @@
-export default function Footer() {
+export default function Footer({optionalStyling}) {
     return (
-        <footer className="mt-5 mb-5">
+        <footer className={optionalStyling == null ? "mt-5 mb-5" : optionalStyling}>
             <div className="container">
                 <div className="footer-icons">
                     <a href="https://www.dor.org/"><img src="/images/footer/1.png"

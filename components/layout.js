@@ -1,5 +1,4 @@
 import Navbar from "./Navbar";
-import Footer from "./Footer";
 
 import Script from 'next/script'
 
@@ -8,7 +7,6 @@ export default function Layout({children}) {
         <>
             <Navbar/>
             <main>{children}</main>
-            <Footer/>
 
             <Script src="https://kit.fontawesome.com/b794bafed8.js" crossOrigin="anonymous"/>
 

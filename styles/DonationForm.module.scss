@@ -1,0 +1,41 @@
+.main {
+    padding-top: 5em;
+}
+
+.main>div.container {
+    width: 67%;
+}
+
+.backgroundWrap {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.donationForm {
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.donationContent {
+    margin: 0 auto;
+    position: relative;
+    padding: 5em;
+    background: white;
+}
+
+.donationTitle h1 {
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    padding: 1em;
+    background-color: rgb(0, 70, 127, 0.9);
+    color: white;
+    background-color: rgb(21, 34, 73, .75);
+}

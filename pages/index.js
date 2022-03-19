@@ -9,6 +9,7 @@ import HeroButttons from "../components/HeroButttons";
 import WhatIsNewmanCarousel from '../components/WhatIsNewmanCarousel';
 import StudentTestimonialCarousel from '../components/StudentTestimonialCarousel';
 import MissionVisionStatement from '../components/MissionVisionStatement';
+import Footer from '../components/Footer';
 
 export default function Home() {
     return (
@@ -98,6 +99,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </div>
     )
 }

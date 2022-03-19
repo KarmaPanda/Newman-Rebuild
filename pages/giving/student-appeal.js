@@ -1,5 +1,6 @@
 import Head from "next/head";
-import Navbar from "../../components/Navbar";
+import DonationForm from "../../components/DonationForm";
+import bg from "../../static/images/giving/student-appeal/1.jpg"
 
 export default function StudentAppeal() {
     return(
@@ -10,7 +11,7 @@ export default function StudentAppeal() {
                 <meta name="description" content="Catholic Community at the University of Rochester"/>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
-            
+            <DonationForm backgroundImage={bg.src} campaign={"Student Appeal"}/>
         </div>
     )
 }
