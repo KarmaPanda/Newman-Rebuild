@@ -22,14 +22,11 @@ async function getYoutubeStreamFromDatabase() {
     });
 
     if (data.length > 0) {
-        //console.log("[GET-YT-STREAM]:", data[0].livestream_id)
         return data[0].livestream_id
     } else {
         return null
     }
 }
-
-// TODO: Make cleanup function to delete all livestream ids that are older than a certain time.
 
 async function updateYoutubeStream(videoId) {
     syncClient().then(_ => {
@@ -94,23 +91,21 @@ async function updateVideoIdFromAPI() {
     });
 }
 
-let ytRefreshSchedule = cron.schedule('*/15 * * * *', () => {
-    updateVideoIdFromAPI().then(_ => {
-        console.log("[CRON]: Executed scheduled task.")
+function startYoutubeUpdateSchedule() {
+    let ytRefreshSchedule = cron.schedule('*/15 * * * *', () => {
+        updateVideoIdFromAPI().then(_ => {
+            console.log("[CRON]: Executed scheduled task.")
+        })
+    }, {
+        scheduled: true,
+        timezone: "America/Los_Angeles"
     })
-}, {
-    scheduled: true,
-    timezone: "America/Los_Angeles"
-})
 
-ytRefreshSchedule.start()
+    ytRefreshSchedule.start()
 
-updateVideoIdFromAPI().then(_ => {
-    console.log("[CRON]: Force execute Youtube Refresh API after build.")
-})
+    updateVideoIdFromAPI().then(_ => {
+        console.log("[CRON]: Force execute Youtube Refresh API after build.")
+    })
+}
 
-syncClient().then(_ => {
-    console.log("[Sequelize]: Force sync client after build.")
-})
-
-module.exports = { getYoutubeStreamFromDatabase, updateYoutubeStream, updateVideoIdFromAPI }
+module.exports = { syncClient, getYoutubeStreamFromDatabase, updateYoutubeStream, updateVideoIdFromAPI }
