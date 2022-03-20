@@ -132,9 +132,9 @@ export default function DonationForm({ backgroundImage, campaign }) {
                 body: JSON.stringify({
                     name: state.name,
                     email: state.email,
-                    classYear: state.classYear,
+                    classYear: state.classYear == "Other" ? state.classYearOptional : state.classYear,
                     description: state.description,
-                    referral: state.referral,
+                    referral: state.referral == "Other" ? state.referralOptional : state.referral,
                     payment_method: state.paymentMethod,
                     campaign: campaign,
                     amount: state.amount
@@ -250,7 +250,7 @@ export default function DonationForm({ backgroundImage, campaign }) {
                                                     email: state.email,
                                                     classYear: state.classYear == "Other" ? state.classYearOptional : state.classYear,
                                                     description: state.description,
-                                                    referral: state.referral,
+                                                    referral: state.referral == "Other" ? state.referralOptional : state.referral,
                                                     payment_method: state.paymentMethod,
                                                     campaign: campaign,
                                                     details: details
