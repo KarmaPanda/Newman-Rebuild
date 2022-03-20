@@ -93,7 +93,7 @@ export default function DonationForm({ backgroundImage, campaign }) {
     function handleOptionalReferral(event) {
         setState({
             ...state,
-            referral: event.target.value
+            referralOptional: event.target.value
         })
     }
 
@@ -136,7 +136,8 @@ export default function DonationForm({ backgroundImage, campaign }) {
                     description: state.description,
                     referral: state.referral,
                     payment_method: state.paymentMethod,
-                    campaign: campaign
+                    campaign: campaign,
+                    amount: state.amount
                 })
             }).then(_ => {
                 Router.push('https://account.venmo.com/pay?recipients=URNewman')
@@ -247,7 +248,7 @@ export default function DonationForm({ backgroundImage, campaign }) {
                                                 body: JSON.stringify({
                                                     name: state.name,
                                                     email: state.email,
-                                                    classYear: state.classYear,
+                                                    classYear: state.classYear == "Other" ? state.classYearOptional : state.classYear,
                                                     description: state.description,
                                                     referral: state.referral,
                                                     payment_method: state.paymentMethod,
