@@ -18,7 +18,7 @@ export default function StaffPage({ title, description, members = [], buttons = 
                     members.map(member =>
                         <div className="row staff" key={member.name}>
                             <div className="col-md-6">
-                                <img src={member.image} />
+                                <img src={member.image} alt={member.name} />
                             </div>
                             <div className="col-md-6">
                                 <h3>{member.name}</h3>

@@ -1,4 +1,5 @@
 import Head from "next/head";
+
 import DonationForm from "../../components/DonationForm";
 import bg from "../../public/static/images/giving/student-appeal/1.jpg"
 

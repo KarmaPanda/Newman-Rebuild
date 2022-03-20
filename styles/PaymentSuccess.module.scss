@@ -6,15 +6,12 @@
     width: 67%;
 }
 
-.backgroundWrap {
+.background {
     position: absolute;
     left: 0;
     top: 0;
     right: 0;
     bottom: 0;
-}
-
-.donationForm {
     background-attachment: fixed;
     background-size: cover;
     height: 100%;
@@ -23,13 +20,17 @@
     background-repeat: no-repeat;
 }
 
-.donationContent {
+.content {
     margin: 0 auto;
     position: relative;
     background: white;
 }
 
-.donationTitle h1 {
+.content a {
+    text-decoration: none;
+}
+
+.title h1 {
     margin: 0 auto;
     position: relative;
     text-align: center;

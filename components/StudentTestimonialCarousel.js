@@ -46,7 +46,7 @@ export default function StudentTestimonialCarousel() {
                                         <h5>Class of 2020 and Doctoral Student</h5>
                                     </div>
                                     <div className="video-container">
-                                        <img src="/images/student-testimonial/2.png" />
+                                        <img src="/images/student-testimonial/2.png" alt="Michael Chavrimootoo"/>
                                     </div>
                                 </li>
                                 <li className="glide__slide">
@@ -66,7 +66,7 @@ export default function StudentTestimonialCarousel() {
                                         <h5>Class of 2020</h5>
                                     </div>
                                     <div className="video-container">
-                                        <img src="/images/student-testimonial/1.png" />
+                                        <img src="/images/student-testimonial/1.png" alt="Brian Filipiak"/>
                                     </div>
                                 </li>
                                 <li className="glide__slide">

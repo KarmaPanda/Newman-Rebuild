@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import styles from '../styles/WeeklySchedule.module.scss'
+import Link from 'next/link'
 
 export default function WeeklySchedule() {
     const [schedule, setSchedule] = useState([{
@@ -61,11 +62,11 @@ export default function WeeklySchedule() {
                         <h3><em>Holy Days of Obligation and Feast Days</em></h3>
                         <p>Holy Day of Obligation Masses are held at 12:30PM and Feast Day Masses
                             are
-                            scheduled on an individual basis. Please see the <a href="/calendar">Newman Calendar</a> for
+                            scheduled on an individual basis. Please see the <Link href="/calendar" passHref>Newman Calendar</Link> for
                             more
                             information on specific Mass times and locations. You may also consult the diocesan
-                            website <a
-                                href="https://www.dor.org/learning-and-living-your-faith/holy-days-of-obligation/">here</a> for
+                            website <Link
+                                href="https://www.dor.org/learning-and-living-your-faith/holy-days-of-obligation/">here</Link> for
                             the list of obligatory Masses.
                         </p>
 

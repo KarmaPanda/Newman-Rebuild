@@ -1,13 +1,11 @@
 import { useEffect, useState } from "react";
 import { PayPalButton } from "react-paypal-button-v2";
-import redirect from 'nextjs-redirect'
 
 import styles from '../styles/DonationForm.module.scss'
 import Router from "next/router";
 
 export default function DonationForm({ backgroundImage, campaign }) {
     const [state, setState] = useState({
-        loading: true,
         name: '',
         email: '',
         classYear: 'N/A',
@@ -19,6 +17,8 @@ export default function DonationForm({ backgroundImage, campaign }) {
         paymentMethod: 'PayPal or Debit/Credit Card'
     })
 
+    const [loading, setLoading] = useState(true)
+
     useEffect(() => {
         fetch("/api/paypal").then(async res => {
             const json = await res.json()
@@ -27,12 +27,10 @@ export default function DonationForm({ backgroundImage, campaign }) {
             document.body.appendChild(script);
 
             script.onload = () => {
-                setState({
-                    loading: false
-                })
+                setLoading(false)
             };
         })
-    }, [])
+    }, [loading])
 
     function handleNameChanged(event) {
         setState({
@@ -106,42 +104,49 @@ export default function DonationForm({ backgroundImage, campaign }) {
         })
     }
 
-    const [paypal, setPaypal] = useState(true)
+    const [paypal, setPaypal] = useState(false)
     const [venmo, setVenmo] = useState(false)
 
     function handlePaymentMethod(event) {
+        setState({
+            ...state,
+            paymentMethod: event.target.value
+        })
+
         if (event.target.value == "Venmo") {
             setVenmo(true)
             setPaypal(false)
         } else {
             setVenmo(false)
-            setPaypal(true)
         }
     }
 
     function handleFormSubmit(event) {
         event.preventDefault();
-        fetch("/api/checkout", {
-            method: "post",
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                name: state.name,
-                email: state.email,
-                classYear: state.classYear,
-                description: state.description,
-                referral: state.referral,
-                payment_method: state.paymentMethod,
-                campaign: campaign,
-                details: details
+        if (venmo) {
+            fetch("/api/checkout", {
+                method: "post",
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    name: state.name,
+                    email: state.email,
+                    classYear: state.classYear,
+                    description: state.description,
+                    referral: state.referral,
+                    payment_method: state.paymentMethod,
+                    campaign: campaign
+                })
+            }).then(_ => {
+                Router.push('https://account.venmo.com/pay?recipients=URNewman')
             })
-        }).then(res => {
-
-        })
+        } else {
+            setPaypal(true)
+        }
     }
 
-    return (!state.loading ?
+    return (!loading ?
         <div className={`${styles.main}`}>
             <div className={`container ${styles.responsiveContainer}`}>
                 <div className={styles.backgroundWrap}>
@@ -160,7 +165,7 @@ export default function DonationForm({ backgroundImage, campaign }) {
                         <div className="form-group mb-3">
                             <label htmlFor="email">Email Address</label>
                             <input type="email" className="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" onChange={handleEmailChanged} value={state.email} required />
-                            <small id="emailHelp" className="form-text text-muted">Your email will be used to confirm your identity. We will not never share your email with anyone else.</small>
+                            <small id="emailHelp" className="form-text text-muted">Your email will be used to confirm your identity. We will not share your email with anyone else.</small>
                         </div>
 
                         <div className="form-group mb-3">
@@ -217,8 +222,16 @@ export default function DonationForm({ backgroundImage, campaign }) {
                                     <label htmlFor="paymentMethod">Payment Method</label>
                                     <select className="form-control" id="paymentMethod" onChange={handlePaymentMethod} value={state.paymentMethod} required>
                                         <option>PayPal or Debit/Credit Card</option>
-                                        <option disabled>Venmo</option>
+                                        <option>Venmo</option>
                                     </select>
+                                </div>
+
+                                {venmo ? <div className="text-center">
+                                    <p>We currently do not support automated Venmo payments yet, but you click below to submit your donation to our database. You will be redirected to our Venmo page where you can place your donation. We will manually check for the Venmo payment.</p>
+                                </div> : null}
+
+                                <div className="text-center">
+                                    <button type="submit" className="btn btn-success btn-lg btn-block">Proceed To Payment</button>
                                 </div>
 
                                 {paypal ? <div className="mt-5 text-center">
@@ -226,8 +239,6 @@ export default function DonationForm({ backgroundImage, campaign }) {
                                         amount={(state.amount)}
                                         capture="authorize"
                                         onSuccess={(details) => {
-                                            console.log("Payment successful, adding to database.")
-
                                             fetch("/api/checkout", {
                                                 method: "post",
                                                 headers: {
@@ -244,9 +255,10 @@ export default function DonationForm({ backgroundImage, campaign }) {
                                                     details: details
                                                 })
                                             }).then(r => {
-                                                Router.push("/")
+                                                Router.push("/payment-success")
                                             }).error(e => {
-                                                console.log(e)
+                                                console.error(e)
+                                                alert("Payment was successful, but our server had some issues processing your payment.")
                                             })
                                         }}
 
@@ -259,10 +271,6 @@ export default function DonationForm({ backgroundImage, campaign }) {
                                             clientId: process.env.paypal_clientid
                                         }}
                                     />
-                                </div> : null}
-
-                                {venmo ? <div className="text-center">
-                                    <button type="submit" className="btn btn-primary">Submit</button>
                                 </div> : null}
                             </>
                             : null}

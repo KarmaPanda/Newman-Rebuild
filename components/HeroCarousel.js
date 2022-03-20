@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default function HeroCarousel() {
     return (
         <div id="HeroCarousel" className="carousel slide" data-bs-ride="carousel" data-touch="true">
@@ -87,12 +89,12 @@ export default function HeroCarousel() {
                     </div>
                 </div>*/}
                 <div className="carousel-item">
-                    <a href="/building">
+                    <Link href="/building" passHref>
                         <picture>
                             <source media="(min-width:1000px)" srcSet="/images/index/4.png" />
                             <img width="100%" src="/images/index/4-mobile.png" alt="Click to learn about our building project" />
                         </picture>
-                    </a>
+                    </Link>
                 </div>
             </div>
             <button className="carousel-control-prev" type="button" data-bs-target="#HeroCarousel" data-bs-slide="prev">

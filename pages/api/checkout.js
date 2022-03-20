@@ -11,13 +11,6 @@ const checkout = (req, res) => {
             res.status(405).send({ message: 'Only POST requests allowed' })
         }
         else {
-            let details = req.body.details
-
-            let request = new checkoutNodeJssdk.orders.OrdersGetRequest(details.id);
-            request.headers["prefer"] = "return=representation";
-            //https://www.paypal.com/us/webapps/mpp/partner-program
-            //request.headers["PayPal-Partner-Attribution-Id"] = "PARTNER_ID_ASSIGNED_BY_YOUR_PARTNER_MANAGER";
-
             if (req.body.payment_method == "Venmo") {
                 Donations.create({
                     id: null,
@@ -32,12 +25,22 @@ const checkout = (req, res) => {
                     amount: req.body.amount,
                     transaction_id: null
                 }).then(async r => {
-                    res.status(201)
+                    console.log("[api/checkout]: New donation by", r.name)
+                    res.status(201).json({
+                        message: "Success!"
+                    })
                 }).catch(error => {
                     console.error("[api/checkout]: ", error)
                     res.status(500)
                 })
             } else {
+                let details = req.body.details
+
+                let request = new checkoutNodeJssdk.orders.OrdersGetRequest(details.id);
+                request.headers["prefer"] = "return=representation";
+                //https://www.paypal.com/us/webapps/mpp/partner-program
+                //request.headers["PayPal-Partner-Attribution-Id"] = "PARTNER_ID_ASSIGNED_BY_YOUR_PARTNER_MANAGER";
+
                 let order;
 
                 try {
@@ -68,8 +71,8 @@ const checkout = (req, res) => {
                     amount: details.purchase_units[0].amount.value,
                     transaction_id: details.id
                 }).then(async r => {
-                    console.log("[api/checkout]: New donation by ", r.name)
-                    res.status(200).json({
+                    console.log("[api/checkout]: New donation by", r.name)
+                    res.status(201).json({
                         message: "Success!"
                     })
                 }).catch(error => {
