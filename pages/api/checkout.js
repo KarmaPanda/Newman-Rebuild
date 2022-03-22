@@ -7,8 +7,7 @@ import { syncClient } from '../../db/dbFunctions';
 
 const sendEmail = require('gmail-send')({
     user: process.env.gmail_user,
-    pass: process.env.gmail_pass,
-    subject: 'Donation Confirmation'
+    pass: process.env.gmail_pass
 })
 
 const checkout = (req, res) => {
@@ -34,7 +33,8 @@ const checkout = (req, res) => {
                     console.log("[api/checkout]: New donation by", r.name)
                     sendEmail({
                         to: req.body.email,
-                        text: 'Your donation has been added to our database.'
+                        subject: 'Thank you for your donation to the ' + req.body.campaign,
+                        text: 'Dear ' + req.body.name + ',\n\nThis email serves as a confirmation that we have recorded your donation of $' + req.body.amount + ' towards the Newman Student Appeal at the University of Rochester.\nWe sincerely appreciate your generosity and support!\n\nSincerely,\nMike Taylor and Michael Chavrimooto'
                     }, (error, result, fullResult) => {
                         if (error) console.error(error);
                         console.log(result);
@@ -87,7 +87,8 @@ const checkout = (req, res) => {
                     console.log("[api/checkout]: New donation by", r.name)
                     sendEmail({
                         to: req.body.email,
-                        text: 'Your donation has been added to our database.'
+                        subject: 'Thank you for your donation to the ' + req.body.campaign,
+                        text: 'Dear ' + req.body.name + ',\n\nThis email serves as a confirmation that we have recorded your donation of $' + details.purchase_units[0].amount.value + ' towards the Newman Student Appeal at the University of Rochester.\nWe sincerely appreciate your generosity and support!\n\nSincerely,\nMike Taylor and Michael Chavrimooto'
                     }, (error, result, fullResult) => {
                         if (error) console.error(error);
                         console.log(result);

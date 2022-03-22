@@ -12,7 +12,7 @@ export default function StudentAppeal() {
                 <meta name="description" content="Catholic Community at the University of Rochester" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <DonationForm backgroundImage={bg.src} campaign={"Student Appeal"} />
+            <DonationForm backgroundImage={bg.src} campaign={"Newman Student Appeal"} />
         </div>
     )
 }
