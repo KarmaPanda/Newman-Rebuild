@@ -3,6 +3,7 @@ const checkoutNodeJssdk = require('@paypal/checkout-server-sdk');
 const payPalClient = require('../../scripts/PayPal');
 const Donations = require("../../db/models/Donations");
 
+import { end } from '@popperjs/core';
 import { syncClient } from '../../db/dbFunctions';
 
 const sendEmail = require('gmail-send')({
@@ -31,14 +32,16 @@ const checkout = (req, res) => {
                     transaction_id: null
                 }).then(async r => {
                     console.log("[api/checkout]: New donation by", r.name)
-                    sendEmail({
-                        to: req.body.email,
-                        subject: 'Thank you for your donation to the ' + req.body.campaign,
-                        text: 'Dear ' + req.body.name + ',\n\nThis email serves as a confirmation that we have recorded your donation of $' + req.body.amount + ' towards the ' +  req.body.campaign + ' at the University of Rochester.\nWe sincerely appreciate your generosity and support!\n\nSincerely,\nMike Taylor and Michael Chavrimooto'
-                    }, (error, result, fullResult) => {
-                        if (error) console.error(error);
-                        console.log(result);
-                    })
+                    setTimeout(function () {
+                        sendEmail({
+                            to: req.body.email,
+                            subject: 'Thank you for your donation to the ' + req.body.campaign,
+                            text: 'Dear ' + req.body.name + ',\n\nThis email serves as a confirmation that we have recorded your donation of $' + req.body.amount + ' towards the ' + req.body.campaign + ' at the University of Rochester.\nWe sincerely appreciate your generosity and support!\n\nSincerely,\nMike Taylor and Michael Chavrimooto'
+                        }, (error, result, fullResult) => {
+                            if (error) console.error(error);
+                            console.log(result);
+                        })
+                    }, 60000 * 2)
                     res.status(201).json({
                         message: "Success!"
                     })
@@ -88,7 +91,7 @@ const checkout = (req, res) => {
                     sendEmail({
                         to: req.body.email,
                         subject: 'Thank you for your donation to the ' + req.body.campaign,
-                        text: 'Dear ' + req.body.name + ',\n\nThis email serves as a confirmation that we have recorded your donation of $' + details.purchase_units[0].amount.value + ' towards the ' +  req.body.campaign + ' at the University of Rochester.\nWe sincerely appreciate your generosity and support!\n\nSincerely,\nMike Taylor and Michael Chavrimooto'
+                        text: 'Dear ' + req.body.name + ',\n\nThis email serves as a confirmation that we have recorded your donation of $' + details.purchase_units[0].amount.value + ' towards the ' + req.body.campaign + ' at the University of Rochester.\nWe sincerely appreciate your generosity and support!\n\nSincerely,\nMike Taylor and Michael Chavrimooto'
                     }, (error, result, fullResult) => {
                         if (error) console.error(error);
                         console.log(result);
