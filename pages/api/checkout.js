@@ -5,6 +5,12 @@ const Donations = require("../../db/models/Donations");
 
 import { syncClient } from '../../db/dbFunctions';
 
+const sendEmail = require('gmail-send')({
+    user: process.env.gmail_user,
+    pass: process.env.gmail_pass,
+    subject: 'Donation Confirmation'
+})
+
 const checkout = (req, res) => {
     syncClient().then(async _ => {
         if (req.method !== 'POST') {
@@ -26,6 +32,13 @@ const checkout = (req, res) => {
                     transaction_id: null
                 }).then(async r => {
                     console.log("[api/checkout]: New donation by", r.name)
+                    sendEmail({
+                        to: req.body.email,
+                        text: 'Your donation has been added to our database.'
+                    }, (error, result, fullResult) => {
+                        if (error) console.error(error);
+                        console.log(result);
+                    })
                     res.status(201).json({
                         message: "Success!"
                     })
@@ -72,6 +85,13 @@ const checkout = (req, res) => {
                     transaction_id: details.id
                 }).then(async r => {
                     console.log("[api/checkout]: New donation by", r.name)
+                    sendEmail({
+                        to: req.body.email,
+                        text: 'Your donation has been added to our database.'
+                    }, (error, result, fullResult) => {
+                        if (error) console.error(error);
+                        console.log(result);
+                    })
                     res.status(201).json({
                         message: "Success!"
                     })

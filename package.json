@@ -15,6 +15,7 @@
     "axios": "^0.26.0",
     "css-loader": "^5.2.7",
     "express": "^4.17.3",
+    "gmail-send": "^1.8.14",
     "next": "^12.1.0",
     "nextjs-cors": "^2.1.0",
     "nextjs-redirect": "^5.2.1",

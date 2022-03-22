@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { PayPalButton } from "react-paypal-button-v2";
 
 import styles from '../styles/DonationForm.module.scss'
@@ -11,8 +11,7 @@ export default function DonationForm({ backgroundImage, campaign }) {
         classYear: 'N/A',
         classYearOptional: '',
         description: '',
-        referral: 'None',
-        referralOptional: '',
+        referral: '',
         amount: 0,
         paymentMethod: 'PayPal or Debit/Credit Card'
     })
@@ -75,25 +74,10 @@ export default function DonationForm({ backgroundImage, campaign }) {
         })
     }
 
-    const [referralOptional, setReferralOptional] = useState(false)
-
     function handleReferralChange(event) {
         setState({
             ...state,
             referral: event.target.value
-        })
-
-        if (event.target.value == "Other") {
-            setReferralOptional(true)
-        } else {
-            setReferralOptional(false)
-        }
-    }
-
-    function handleOptionalReferral(event) {
-        setState({
-            ...state,
-            referralOptional: event.target.value
         })
     }
 
@@ -121,6 +105,14 @@ export default function DonationForm({ backgroundImage, campaign }) {
         }
     }
 
+    function ScrollToPayPal() {
+        window.scroll({
+            top: document.body.offsetHeight,
+            left: 0,
+            behavior: 'smooth',
+        });
+    }
+
     function handleFormSubmit(event) {
         event.preventDefault();
         if (venmo) {
@@ -144,6 +136,7 @@ export default function DonationForm({ backgroundImage, campaign }) {
             })
         } else {
             setPaypal(true)
+            ScrollToPayPal()
         }
     }
 
@@ -192,19 +185,9 @@ export default function DonationForm({ backgroundImage, campaign }) {
                         </div>
 
                         <div className="form-group mb-3">
-                            <label htmlFor="referral">Who referred you to this page? (optional)</label>
-                            <select className="form-control" id="referral" onChange={handleReferralChange} value={state.referral}>
-                                <option>None</option>
-                                <option>Michael Chavrimootoo</option>
-                                <option>Michael Taylor</option>
-                                <option>Other</option>
-                            </select>
+                            <label htmlFor="referralOptional">Who referred you (optional)</label>
+                            <input type="text" className="form-control" id="referralOptional" placeholder="Enter referrer" onChange={handleReferralChange} value={state.referral} />
                         </div>
-
-                        {referralOptional ? <div className="form-group mb-3">
-                            <label htmlFor="referralOptional">If other, who was your referrer, or how did you find this page?</label>
-                            <input type="text" className="form-control" id="referralOptional" placeholder="Enter referrer" onChange={handleOptionalReferral} value={state.referralOptional} />
-                        </div> : null}
 
                         <label htmlFor="amount">Amount</label>
                         <div className="input-group mb-3">
@@ -250,7 +233,7 @@ export default function DonationForm({ backgroundImage, campaign }) {
                                                     email: state.email,
                                                     classYear: state.classYear == "Other" ? state.classYearOptional : state.classYear,
                                                     description: state.description,
-                                                    referral: state.referral == "Other" ? state.referralOptional : state.referral,
+                                                    referral: state.referral,
                                                     payment_method: state.paymentMethod,
                                                     campaign: campaign,
                                                     details: details
@@ -262,7 +245,6 @@ export default function DonationForm({ backgroundImage, campaign }) {
                                                 alert("Payment was successful, but our server had some issues processing your payment.")
                                             })
                                         }}
-
                                         onError={(details) => {
                                             console.error(details)
                                             alert("PayPal is having service errors, please try again.")
