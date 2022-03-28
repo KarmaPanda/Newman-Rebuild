@@ -13,7 +13,7 @@ export default function DonationForm({ backgroundImage, campaign }) {
         description: '',
         referral: '',
         amount: 0,
-        paymentMethod: 'PayPal or Debit/Credit Card'
+        paymentMethod: 'Venmo'
     })
 
     const [loading, setLoading] = useState(true)
