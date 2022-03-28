@@ -3,7 +3,6 @@ import { PayPalButton } from "react-paypal-button-v2";
 
 import styles from '../styles/DonationForm.module.scss'
 import Router from "next/router";
-import { end } from "@popperjs/core";
 
 export default function DonationForm({ backgroundImage, campaign }) {
     const [state, setState] = useState({

@@ -3,7 +3,6 @@ const checkoutNodeJssdk = require('@paypal/checkout-server-sdk');
 const payPalClient = require('../../scripts/PayPal');
 const Donations = require("../../db/models/Donations");
 
-import { end } from '@popperjs/core';
 import { syncClient } from '../../db/dbFunctions';
 
 const sendEmail = require('gmail-send')({
