@@ -89,7 +89,7 @@ export default function DonationForm({ backgroundImage, campaign }) {
     }
 
     const [paypal, setPaypal] = useState(false)
-    const [venmo, setVenmo] = useState(false)
+    const [venmo, setVenmo] = useState(true)
 
     function handlePaymentMethod(event) {
         setState({
