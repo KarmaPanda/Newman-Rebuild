@@ -209,7 +209,7 @@ export default function DonationForm({ backgroundImage, campaign }) {
                                     <div className="form-group mb-3">
                                         <label htmlFor="paymentMethod">Payment Method</label>
                                         <select className="form-control" id="paymentMethod" onChange={handlePaymentMethod} value={state.paymentMethod} required>
-                                            <option>PayPal or Debit/Credit Card</option>
+                                            <option disabled>PayPal or Debit/Credit Card</option>
                                             <option>Venmo</option>
                                         </select>
                                     </div>
