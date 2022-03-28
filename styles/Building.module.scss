@@ -1,0 +1,344 @@
+/*a {
+    overflow-wrap: break-word;
+}
+
+a:hover {
+    color: black;
+}
+
+main p {
+    font-size: 24px;
+}
+
+p {
+    color: black;
+}
+*/
+
+.content img {
+    width: 100%;
+}
+
+.contentAlt {
+    background-color: #182957;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+.headerContent {
+    margin: 1em 0 0;
+    text-align: center;
+    border-bottom: 5px solid #fac600;
+    min-height: unset;
+    padding: 20px;
+}
+
+.headerContent img {
+    width: unset;
+}
+
+.headerNotification {
+    color: black;
+    padding: 1em;
+}
+
+.wrapper {
+    background: url("../public/images/building/buildinggraphicwithslogan3.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.buildingHero img {
+    width: 100%;
+}
+
+.filler {
+    height: 500px;
+}
+
+.title {
+    text-align: center;
+    background-color: #fac600;
+    margin: 1em 0;
+    padding: 0.5em;
+}
+
+.title h1 {
+    color: #182957;
+    font-family: Roboto Slab;
+    font-weight: 700;
+}
+
+.title h2 {
+    font-family: Roboto;
+}
+
+.content {
+    padding: unset;
+    margin-bottom: 50px;
+}
+
+.donation {
+    text-align: center;
+}
+
+.donation img {
+    width: 100%;
+}
+
+.donation h2 {
+    margin: 1em 0;
+}
+
+.donateBtn {
+    background: #ffc60b;
+    color: black;
+    border: unset;
+    padding: 1em;
+    font-family: Roboto;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border: 3px #ffc60b solid;
+}
+
+.donateBtn:hover {
+    background: black;
+    color: #ffc60b;
+    text-decoration: underline;
+    border: 3px black solid;
+}
+
+.sectionHeading {
+    color: #182957;
+    font-weight: 600;
+}
+
+.quoteSection img {
+    display: block;
+    margin: auto;
+    width: auto;
+    max-width: 100%;
+    height: 250px;
+}
+
+.quoteSection,
+.splitSection,
+.fullSection {
+    font-family: Roboto;
+}
+
+.splitSection h1,
+.fullSection h1 {
+    color: #182957;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+.fullSection p {
+    margin-bottom: 50px;
+}
+
+.subSection {
+    background: #182957;
+    color: white;
+}
+
+.mainSection p,
+.subSection li {
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.alignleft {
+    float: left;
+    width: 560px;
+    margin: 2em;
+}
+
+.alignright {
+    float: right;
+    width: 560px;
+    margin: 4em;
+}
+
+.fullSection h3 {
+    font-weight: 600;
+    color: black;
+}
+
+.videoContainer {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.videoContainer iframe,
+.videoContainer object,
+.videoContainer embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#donators {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#donators li {
+    margin: 15px;
+    font-size: large;
+}
+
+.utopia {
+    font-family: utopia-std, serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.utopia strong {
+    font-family: utopia-std, serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.utopia em {
+    font-family: utopia-std, serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.utopiaCaption {
+    font-family: utopia-std-caption, serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.utopiaCaption strong {
+    font-family: utopia-std-caption, serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.utopiaCaption em {
+    font-family: utopia-std-caption, serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.utopiaSubhead {
+    font-family: utopia-std-subhead, serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto {
+    font-family: Roboto;
+    font-weight: 400;
+}
+
+.roboto strong {
+    font-family: Roboto;
+    font-weight: 700;
+}
+
+.roboto em {
+    font-family: Roboto;
+    font-style: italic;
+}
+
+.thankYouBackground {
+    background: url("../public/images/building/6.jpg") no-repeat center bottom fixed;
+}
+
+.thankYouFiller {
+    height: 150px;
+}
+
+.donation iframe {
+    margin: auto;
+}
+
+.address {
+    margin-bottom: 50px;
+}
+
+.address p {
+    margin-bottom: 0;
+}
+
+.quoteSection h1 {
+    font-size: 26px;
+}
+
+.quoteSection h2 {
+    font-size: 18px;
+}
+
+.title {
+    font-size: x-large;
+}
+
+.title h1 {
+    font-size: 56px;
+}
+
+.title h2 {
+    font-size: 24px;
+}
+
+.donateBtn {
+    font-size: 18px;
+}
+
+.splitSection h1, .fullSection h1 {
+    font-size: 46px;
+}
+
+.fullSection h3 {
+    font-size: 28px;
+}
+
+@media (max-width: 480px) {
+    .quoteSection h1 {
+        font-size: 20px;
+    }
+
+    .quoteSection h2 {
+        font-size: 14px;
+    }
+
+    .title {
+        font-size: large;
+    }
+
+    .title h1 {
+        font-size: 42px;
+    }
+    
+    .title h2 {
+        font-size: 18px;
+    }
+
+    .donateBtn {
+        font-size: 16px;
+    }
+
+    .splitSection h1, .fullSection h1 {
+        text-align: center;
+        font-size: 28px;
+    }
+
+    .fullSection h3 {
+        font-size: 18px;
+    }
+}
