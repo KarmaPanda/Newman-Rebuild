@@ -12,7 +12,7 @@ export default function StudentAppeal() {
                 <meta name="description" content="Catholic Community at the University of Rochester" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <DonationForm backgroundImage={bg.src} campaign={"Newman Student Appeal"} />
+            <DonationForm backgroundImage={bg.src} campaign={"Newman Student Appeal"} campaignMessage={"Change the UR campus forever and bring our Catholic faith to generations!  By filling out this form and giving by PayPal or Venmo (options will appear below) you will join hundreds of others in this historic effort. And remember, when we reach 250 students, the project will be given $100,000! So $1, $5 or more will be transformative!<br>~Peace, Fr. Cool"} />
         </div>
     )
 }
