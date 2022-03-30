@@ -4,7 +4,7 @@ import { PayPalButton } from "react-paypal-button-v2";
 import styles from '../styles/DonationForm.module.scss'
 import Router from "next/router";
 
-export default function DonationForm({ backgroundImage, campaign }) {
+export default function DonationForm({ backgroundImage, campaign, campaignMessage }) {
     const [state, setState] = useState({
         name: '',
         email: '',
@@ -13,7 +13,7 @@ export default function DonationForm({ backgroundImage, campaign }) {
         description: '',
         referral: '',
         amount: 0,
-        paymentMethod: 'Venmo'
+        paymentMethod: 'PayPal or Debit/Credit Card'
     })
 
     const [loading, setLoading] = useState(true)
@@ -89,7 +89,7 @@ export default function DonationForm({ backgroundImage, campaign }) {
     }
 
     const [paypal, setPaypal] = useState(false)
-    const [venmo, setVenmo] = useState(true)
+    const [venmo, setVenmo] = useState(false)
 
     function handlePaymentMethod(event) {
         setState({
@@ -153,6 +153,9 @@ export default function DonationForm({ backgroundImage, campaign }) {
                         <h1>{campaign}</h1>
                     </section>
                     <main className={`${styles.donationContent} row`}>
+                        <div className="col px-5 mt-5">
+                            <p dangerouslySetInnerHTML={{ __html: campaignMessage }}></p>
+                        </div>
                         <form className="p-5" onSubmit={handleFormSubmit}>
                             <div className="form-group mb-3">
                                 <label htmlFor="email">Name</label>
@@ -208,13 +211,13 @@ export default function DonationForm({ backgroundImage, campaign }) {
                                     <div className="form-group mb-3">
                                         <label htmlFor="paymentMethod">Payment Method</label>
                                         <select className="form-control" id="paymentMethod" onChange={handlePaymentMethod} value={state.paymentMethod} required>
+                                            <option>PayPal or Debit/Credit Card</option>
                                             <option>Venmo</option>
-                                            <option disabled>PayPal or Debit/Credit Card</option>
                                         </select>
                                     </div>
 
                                     {venmo ? <div className="text-center">
-                                        <p>We currently do not support automated Venmo payments yet, but you click below to submit your donation to our database. You will be redirected to our Venmo page where you can place your donation. We will manually check for the Venmo payment.</p>
+                                        <p>You will be redirected to our Venmo page where you can place your donation after clicking the button below.</p>
                                     </div> : null}
 
                                     <div className="text-center">
