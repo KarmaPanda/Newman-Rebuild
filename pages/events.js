@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Footer from "../components/Footer"
 import SubPageCard from "../components/SubPageCard";
 
 export default function Events() {
@@ -59,6 +60,7 @@ export default function Events() {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </div>
     )
 }

@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Footer from "../components/Footer"
 import SubPageCard from "../components/SubPageCard";
 
 export default function About() {
@@ -33,6 +34,7 @@ export default function About() {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </div>
     )
 }

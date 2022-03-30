@@ -1,6 +1,7 @@
 import Head from "next/head";
 import HeroAlt from "../components/HeroAlt";
 import StreamingModule from "../components/StreamingModule";
+import Footer from "../components/Footer"
 
 export default function Streaming() {
     return (
@@ -18,8 +19,8 @@ export default function Streaming() {
             </picture>
 
             <HeroAlt title="" description={'Click <a href="massparts" style="text-decoration:none">here</a> to view our weekly bulletin and follow along with the music and Mass parts.'}/>
-
             <StreamingModule/>
+            <Footer/>
         </div>
     )
 }
