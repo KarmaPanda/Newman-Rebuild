@@ -91,21 +91,4 @@ async function updateVideoIdFromAPI() {
     });
 }
 
-function startYoutubeUpdateSchedule() {
-    let ytRefreshSchedule = cron.schedule('*/15 * * * *', () => {
-        updateVideoIdFromAPI().then(_ => {
-            console.log("[CRON]: Executed scheduled task.")
-        })
-    }, {
-        scheduled: true,
-        timezone: "America/Los_Angeles"
-    })
-
-    ytRefreshSchedule.start()
-
-    updateVideoIdFromAPI().then(_ => {
-        console.log("[CRON]: Force execute Youtube Refresh API after build.")
-    })
-}
-
 module.exports = { syncClient, getYoutubeStreamFromDatabase, updateYoutubeStream, updateVideoIdFromAPI }

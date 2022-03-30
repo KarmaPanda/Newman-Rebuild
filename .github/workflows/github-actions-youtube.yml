@@ -1,0 +1,13 @@
+name: Update YouTube Stream
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+jobs:
+  cron:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Update YouTube Stream
+        run: |
+          curl --request POST \
+          --url 'http://urnewman-beta.herokuapp.com/api/update-yt-stream' \
+          --header 'Authorization: Bearer ${{ secrets.ACTION_KEY }}'
