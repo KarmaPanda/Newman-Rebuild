@@ -35,7 +35,7 @@ export default function YesPa() {
                             <li className="li-sp"><i className="fa-li fa fa-check" style={{ color: "rgb(195,17,22);" }}></i>Assisting students, incarcerated individuals, those with special needs, and many others to believe in themselves and be the best they can.</li>
                         </ul>
                         <hr width="50%" />
-                        <h3 className="py-3"><i>Best of all, it's free!</i></h3>
+                        <h3 className="py-3"><i>Best of all, it&apos;s free!</i></h3>
                     </div>
                 </div>
             </div>
