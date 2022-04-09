@@ -5,8 +5,8 @@ import { updateVideoIdFromAPI } from '../../db/dbFunctions';
 // https://github.com/paulphys/nextjs-cron
 
 const update_stream = (req, res) => {
-    const { APP_KEY } = process.env.APP_KEY;
-    const { ACTION_KEY } = req.headers.authorization.split(" ")[1];
+    let APP_KEY = process.env.APP_KEY;
+    let ACTION_KEY = req.headers.authorization.split(" ")[1];
 
     try {
         if (ACTION_KEY === APP_KEY) {
