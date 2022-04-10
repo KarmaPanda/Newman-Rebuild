@@ -1,5 +1,6 @@
 import Head from "next/head";
 import StaffPage from "../../components/StaffPage";
+import Footer from "../../components/Footer"
 
 export default function ESMEBoard() {
     const members =
@@ -28,6 +29,8 @@ export default function ESMEBoard() {
             </Head>
 
             <StaffPage title="Eastman School of Music E-Board" description="Called together as members of the body of Christ, the Catholic Newman Community at Eastman seeks to encourage all to strive toward the highest ideals of Christian spiritual, moral, and intellectual development as lived and taught in the rich tradition of the Catholic Church. We strive to provide support to the busy lives of Eastman Catholic students through our semesterly planned events, services, and liturgies." members={members} buttons={buttons} />
+            
+            <Footer/>
         </div>
     )
 }

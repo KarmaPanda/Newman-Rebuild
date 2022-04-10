@@ -1,5 +1,5 @@
 import Head from "next/head";
-import StaffPage from "../../components/StaffPage";
+import Footer from "../../components/Footer";
 import SubPageCard from "../../components/SubPageCard";
 
 export default function StudentLeadership() {
@@ -29,6 +29,8 @@ export default function StudentLeadership() {
                     </div>
                 </div>
             </div>
+            
+            <Footer/>
         </div>
     )
 }

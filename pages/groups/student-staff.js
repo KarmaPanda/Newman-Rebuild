@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Footer from "../../components/Footer";
 import StaffPage from "../../components/StaffPage";
 
 export default function StudentStaff() {
@@ -64,6 +65,7 @@ export default function StudentStaff() {
             </Head>
 
             <StaffPage title="Student Leadership" description="" members={members}/>
+            <Footer/>
         </div>
     )
 }

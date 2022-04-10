@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Footer from "../../components/Footer";
 import StaffPage from "../../components/StaffPage";
 
 export default function RCEBoard() {
@@ -6,12 +7,12 @@ export default function RCEBoard() {
         [
             {
                 "name": "Ella Adams",
-                "image": "/images/groups/student-leadership/rc-eboard/1.jpg",
+                "image": "/images/groups/student-leadership/rc-eboard/1.JPG",
                 "description": `Class of 2024<br>Biomedical Engineering Major<br>Hometown: Pittsburgh, PA`
             },
             {
                 "name": "Anapaula Avila",
-                "image": "/images/groups/student-leadership/rc-eboard/2.jpg",
+                "image": "/images/groups/student-leadership/rc-eboard/2.JPG",
                 "description": `Class of 2022<br>Biomedical Engineering Major<br>Hometown: Tucson, AZ`
             },
             {
@@ -54,6 +55,7 @@ export default function RCEBoard() {
             </Head>
 
             <StaffPage title="River Campus E-Board" description="E-Board, short for executive board, is the student-organized leadership team for the Catholic Newman Community. They organize Newman events, earmark budgeting, and brainstorm new ways to promote student engagement. Join them for any and all Newman-sponsored events, services, and liturgies on the River Campus." buttons={buttons} members={members} />
+            <Footer/>
         </div>
     )
 }
