@@ -20,7 +20,7 @@ export default function HeroCarousel() {
                     </picture>
                 </div>
                 <div className="carousel-item">
-                    <Link href="/streaming">
+                    <Link href="/streaming" passHref>
                         <picture>
                             <source media="(min-width:1000px)" srcSet="/images/index/4112022/3.png" />
                             <img width="100%" src="/images/index/4112022/3.png" alt="Holy Week Schedule" />
@@ -28,7 +28,7 @@ export default function HeroCarousel() {
                     </Link>
                 </div>
                 <div className="carousel-item">
-                    <Link href="/giving/student-appeal">
+                    <Link href="/giving/student-appeal" passHref>
                         <picture>
                             <source media="(min-width:1000px)" srcSet="/images/index/4112022/4.png" />
                             <img width="100%" src="/images/index/4112022/4.png" alt="Newman Student Appeal" />
@@ -36,7 +36,7 @@ export default function HeroCarousel() {
                     </Link>
                 </div>
                 <div className="carousel-item">
-                    <Link href="/streaming">
+                    <Link href="/streaming" passHref>
                         <picture>
                             <source media="(min-width:1000px)" srcSet="/images/index/4112022/5.png" />
                             <img width="100%" src="/images/index/4112022/5.png" alt="Daily Mass" />
@@ -44,7 +44,7 @@ export default function HeroCarousel() {
                     </Link>
                 </div>
                 <div className="carousel-item">
-                    <Link href="/streaming">
+                    <Link href="/streaming" passHref>
                         <picture>
                             <source media="(min-width:1000px)" srcSet="/images/index/4112022/7.png" />
                             <img width="100%" src="/images/index/4112022/7.png" alt="Sunday Mass" />
