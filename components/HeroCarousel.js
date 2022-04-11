@@ -11,19 +11,9 @@ export default function HeroCarousel() {
                 <button type="button" data-bs-target="#HeroCarousel" data-bs-slide-to="3" aria-label="Slide 4" />
                 <button type="button" data-bs-target="#HeroCarousel" data-bs-slide-to="4" aria-label="Slide 5" />
                 <button type="button" data-bs-target="#HeroCarousel" data-bs-slide-to="5" aria-label="Slide 6" />
-                <button type="button" data-bs-target="#HeroCarousel" data-bs-slide-to="6" aria-label="Slide 7" />
-                <button type="button" data-bs-target="#HeroCarousel" data-bs-slide-to="7" aria-label="Slide 8" />
             </div>
             <div className="carousel-inner">
                 <div className="carousel-item active">
-                    <Link href="/streaming">
-                        <picture>
-                            <source media="(min-width:1000px)" srcSet="/images/index/4112022/1.png" />
-                            <img width="100%" src="/images/index/4112022/1.png" alt="Spring 2021 Newman" />
-                        </picture>
-                    </Link>
-                </div>
-                <div className="carousel-item">
                     <picture>
                         <source media="(min-width:1000px)" srcSet="/images/index/4112022/2.png" />
                         <img width="100%" src="/images/index/4112022/2.png" alt="Happy Easter" />
@@ -46,16 +36,10 @@ export default function HeroCarousel() {
                     </Link>
                 </div>
                 <div className="carousel-item">
-                    <picture>
-                        <source media="(min-width:1000px)" srcSet="/images/index/4112022/5.png" />
-                        <img width="100%" src="/images/index/4112022/5.png" alt="Daily Mass" />
-                    </picture>
-                </div>
-                <div className="carousel-item">
                     <Link href="/streaming">
                         <picture>
-                            <source media="(min-width:1000px)" srcSet="/images/index/4112022/6.png" />
-                            <img width="100%" src="/images/index/4112022/6.png" alt="Lent at Newman" />
+                            <source media="(min-width:1000px)" srcSet="/images/index/4112022/5.png" />
+                            <img width="100%" src="/images/index/4112022/5.png" alt="Daily Mass" />
                         </picture>
                     </Link>
                 </div>
