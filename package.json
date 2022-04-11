@@ -20,7 +20,7 @@
         "gmail-send": "^1.8.14",
         "json2csv": "^5.0.7",
         "next": "^12.1.0",
-        "nextjs-cors": "^2.1.0",
+        "nextjs-cors": "^2.1.1",
         "nextjs-redirect": "^5.2.1",
         "node-cron": "^3.0.0",
         "pg": "^8.7.3",
@@ -28,14 +28,14 @@
         "react": "^17.0.2",
         "react-dom": "17.0.2",
         "react-paypal-button-v2": "^2.6.3",
-        "sass": "^1.49.8",
+        "sass": "^1.50.0",
         "sequelize": "^6.17.0",
         "sequelize-cli": "^6.4.1",
         "sharp": "^0.30.3"
     },
     "devDependencies": {
         "eslint": "8.11.0",
-        "eslint-config-next": "12.1.0",
+        "eslint-config-next": "12.1.4",
         "typescript": "^4.6.2",
         "webpack": "^5.70.0"
     }
