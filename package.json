@@ -18,6 +18,7 @@
         "css-loader": "^5.2.7",
         "express": "^4.17.3",
         "gmail-send": "^1.8.14",
+        "json2csv": "^5.0.7",
         "next": "^12.1.0",
         "nextjs-cors": "^2.1.0",
         "nextjs-redirect": "^5.2.1",

@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Footer from "../../components/Footer";
 import StaffPage from "../../components/StaffPage";
 
 export default function Staff() {
@@ -58,6 +59,7 @@ export default function Staff() {
             </Head>
 
             <StaffPage title="Staff" description="" members={members}/>
+            <Footer/>
         </div>
     )
 }

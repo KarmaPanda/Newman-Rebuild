@@ -35,7 +35,7 @@ const checkout = (req, res) => {
                         sendEmail({
                             to: req.body.email,
                             subject: 'Thank you for your donation to the ' + req.body.campaign,
-                            text: 'Dear ' + req.body.name + ',\n\nThis email serves as a confirmation that we have recorded your donation of $' + req.body.amount + ' towards the ' + req.body.campaign + ' at the University of Rochester.\nWe sincerely appreciate your generosity and support!\n\nSincerely,\nMike Taylor and Michael Chavrimooto'
+                            text: 'Dear ' + req.body.name + ',\n\nThis email serves as a confirmation that we have recorded your donation of $' + req.body.amount + ' towards the ' + req.body.campaign + ' at the University of Rochester.\nWe sincerely appreciate your generosity and support!\n\nSincerely,\nMike Taylor and Michael Chavrimootoo'
                         }, (error, result, fullResult) => {
                             if (error) console.error(error);
                             console.log(result);
@@ -90,7 +90,7 @@ const checkout = (req, res) => {
                     sendEmail({
                         to: req.body.email,
                         subject: 'Thank you for your donation to the ' + req.body.campaign,
-                        text: 'Dear ' + req.body.name + ',\n\nThis email serves as a confirmation that we have recorded your donation of $' + details.purchase_units[0].amount.value + ' towards the ' + req.body.campaign + ' at the University of Rochester.\nWe sincerely appreciate your generosity and support!\n\nSincerely,\nMike Taylor and Michael Chavrimooto'
+                        text: 'Dear ' + req.body.name + ',\n\nThis email serves as a confirmation that we have recorded your donation of $' + details.purchase_units[0].amount.value + ' towards the ' + req.body.campaign + ' at the University of Rochester.\nWe sincerely appreciate your generosity and support!\n\nSincerely,\nMike Taylor and Michael Chavrimootoo'
                     }, (error, result, fullResult) => {
                         if (error) console.error(error);
                         console.log(result);
