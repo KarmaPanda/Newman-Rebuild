@@ -1,7 +1,24 @@
-.content h3, .content p{
+.content h1, .content h3, .content p{
     text-align: center;
 }
 
 .content hr {
     margin: auto;
+}
+
+.contentList i {
+    color: rgb(195,17,22);
+}
+
+.headerDivider {
+    width: 60%;
+}
+
+.tabNav button {
+    color: #ffdd00!important;
+}
+
+.tabContent p {
+    margin: 1em;
+    color: #ffffff;
 }
