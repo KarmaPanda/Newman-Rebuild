@@ -9,5 +9,5 @@ jobs:
       - name: Update YouTube Stream
         run: |
           curl --request POST \
-          --url 'http://urnewman-beta.herokuapp.com/api/update-yt-stream' \
+          --url 'https://urnewman.org/api/update-yt-stream' \
           --header 'Authorization: Bearer ${{ secrets.ACTION_KEY }}'
