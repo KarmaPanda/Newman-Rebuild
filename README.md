@@ -2,7 +2,7 @@
 
 Open source work-in-progress rebuild of https://urnewman.org/
 
-Visit https://urnewman-beta.herokuapp.com/ for working demo.
+Now deployed as current production server replacing https://urnewman-legacy.herokuapp.com/
 
 Built with Next.js React Framework.
 
