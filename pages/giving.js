@@ -20,19 +20,27 @@ export default function Giving() {
                     </div>
                     <div className="row justify-content-center">
                         <SubPageCard name="Annual Appeals" img="/images/giving/1.jpg"
-                            description="" link="/giving/annual-appeal" />
+                            description="" link="/giving/annualappeal" />
+                        {/*<SubPageCard name="Annual Appeals" img="/images/giving/1.jpg"
+                            description="" link="/giving/annual-appeal" />*/}
                         <SubPageCard name="Building Project" img="/images/giving/2.jpg"
                             description="" link="/building" />
                         <SubPageCard name="Day of Giving" img="/images/giving/3.png"
-                            description="" link="/giving/day-of-giving" />
+                            description="" link="/giving/dog" />
+                        {/*<SubPageCard name="Day of Giving" img="/images/giving/3.png"
+                            description="" link="/giving/day-of-giving" />*/}
                     </div>
                     <div className="row justify-content-center">
-                        <SubPageCard name="George Eastman Circle (5-Yearr Pledged Giving)" img="/images/giving/4.png"
+                        <SubPageCard name="George Eastman Circle (5-Year Pledged Giving)" img="/images/giving/4.png"
                             description="" link="/giving/george-eastman-circle" />
+                        {/*<SubPageCard name="George Eastman Circle (5-Year Pledged Giving)" img="/images/giving/4.png"
+                            description="" link="/giving/george-eastman-circle" />*/}
                         <SubPageCard name="Mass Collection" img="/images/giving/5.jpg"
                             description="" link="/giving/collection" />
+                        {/*<SubPageCard name="Special Appeals" img="/images/giving/6.jpg"
+                            description="" link="/giving/special-appeal" />*/}
                         <SubPageCard name="Special Appeals" img="/images/giving/6.jpg"
-                            description="" link="/giving/special-appeal" />
+                            description="" link="/giving/specialappeal" />
                     </div>
                     <div className="row justify-content-center">
                         <SubPageCard name="Wilson Society (Planned Giving)" img="/images/giving/7.png"
@@ -40,7 +48,7 @@ export default function Giving() {
                     </div>
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </div>
     )
 }
