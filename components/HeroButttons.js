@@ -4,7 +4,7 @@ export default function HeroButttons() {
     return (
         <div className="container-fluid">
             <div className="row hero-buttons">
-                <Link href="/about" passHref><div className="col-md-4 hero-buttons-item" style={{
+                <Link href="/update" passHref><div className="col-md-4 hero-buttons-item" style={{
                     backgroundImage: "url('../images/index/hero-buttons/1.jpg')"
                 }}>
                     <h3>Register/Update Information</h3>
