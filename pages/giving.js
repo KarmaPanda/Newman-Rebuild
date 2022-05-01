@@ -26,7 +26,7 @@ export default function Giving() {
                         <SubPageCard name="Building Project" img="/images/giving/2.jpg"
                             description="" link="/building" />
                         <SubPageCard name="Day of Giving" img="/images/giving/3.png"
-                            description="" link="/giving/dog" />
+                            description="" link="https://www.rochester.edu/giving/day-of-giving/?cfpage=/o/university-of-rochester/i/day-of-giving-2022/s/catholic-newman-community" />
                         {/*<SubPageCard name="Day of Giving" img="/images/giving/3.png"
                             description="" link="/giving/day-of-giving" />*/}
                     </div>
