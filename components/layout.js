@@ -15,7 +15,7 @@ export default function Layout({ children }) {
     return (
         <>
             <Head>
-                <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+                <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
                 <meta property="og:title" content="University of Rochester: Catholic Newman Community" />
