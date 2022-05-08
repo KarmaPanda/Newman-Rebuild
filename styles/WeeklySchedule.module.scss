@@ -1,16 +1,21 @@
 .schedule {
-  text-align: center;
-  background-color: #00467f;
-  padding: 1em;
-  color: white;
+    text-align: center;
+    background-color: #00467f;
+    padding: 1em;
+    color: white;
 }
 
 .schedule a {
-  color: #337ab7;
-  text-decoration: none;
+    color: #337ab7;
+    text-decoration: none;
+}
+
+.schedule a:hover {
+    color: #354552;
+    text-decoration: none;
 }
 
 .schedule h3 {
-  margin-top: 20px;
-  margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }

@@ -1,5 +1,6 @@
 import Link from "next/link"
 
+// In the future, depreciate this module and integrate it into Notification.js
 export default function HeaderNotification() {
     return (
         <div className="header-notification">

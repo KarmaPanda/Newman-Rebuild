@@ -1,6 +1,10 @@
 @import "~bootstrap/scss/bootstrap.scss";
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+a {
+    text-decoration: none;
+}
+
 .newman-primary-color {
     //color: #fac600 !important;
     background-color: #00467f !important;
