@@ -31,7 +31,7 @@
         "sass": "^1.50.0",
         "sequelize": "^6.18.0",
         "sequelize-cli": "^6.4.1",
-        "sharp": "^0.30.3"
+        "sharp": "^0.30.5"
     },
     "devDependencies": {
         "eslint": "8.11.0",
