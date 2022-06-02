@@ -19,14 +19,14 @@ export default function About() {
                         </div>
                     </div>
                     <div className="row justify-content-center">
+                        <SubPageCard name="Contact Us" img="/images/about/5.jpg"
+                            description="" link="/contact-us" />
+                        <SubPageCard name="Our Patron Saint" img="/images/about/4.png"
+                            description="" link="/jhn" />
                         <SubPageCard name="Staff" img="/images/about/1.png"
                             description="" link="/groups/staff" />
                         <SubPageCard name="Student Leadership" img="/images/about/2.png"
                             description="" link="/groups/student-leadership" />
-                        <SubPageCard name="Our Patron Saint" img="/images/about/4.png"
-                            description="" link="/jhn" />
-                        <SubPageCard name="Contact Us" img="/images/about/5.jpg"
-                            description="" link="/contact-us" />
                     </div>
                 </div>
             </div>
