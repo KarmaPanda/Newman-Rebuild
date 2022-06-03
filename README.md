@@ -12,13 +12,7 @@ Contributors: Desmond Lai (creator)
 
 /
 
-    - Change 404 page message to say redirecting to old website.
-    - Remove /medallion
     - Add Metadata Image for Facebook/Twitter cards when sharing link.
-
-/contact-us
-
-    - Remove Fax and +1 on phone number
 
 /giving
 
@@ -39,20 +33,6 @@ Contributors: Desmond Lai (creator)
     - Remove /events/cup (Newman Cup)
     - Combine /events/supper with Newman Nite. 1. Newman Nite 2. Third Sunday Supper
     - Remove /events/wilderness (Wilderness Retreat)
-    - Change Daily Mass & InstaMass Thumbnail
-    - Change Mass Thumbnail
     - For Networking change to Alumni Networking
     - Remove One Day Retreat
-
-/groups
-
-    - Replace St.Sebastian Society Thumbnail Picture
-
-/pub
-
-    - Combine both annual report and newsletter pages into one.
-
-/pub/annual-report and /pub/newsletter
-
-    - Limit to only 5 years of previous annual reports
 
