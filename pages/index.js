@@ -39,7 +39,7 @@ export default function Home() {
                         <div className="col-sm-6">
                             <div className="footer-phone">
                                 <p><i className="fas fa-phone-alt fa-3x" /></p>
-                                <p className="h2"><a href="tel:585-275-8515">+1 (585) 275-8515</a></p>
+                                <p className="h2"><a href="tel:585-275-8515">(585) 275-8515</a></p>
                             </div>
                             <div className="footer-email">
                                 <p><i className="fas fa-inbox fa-3x" /></p>
