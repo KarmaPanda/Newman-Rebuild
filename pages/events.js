@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Footer from "../components/Footer"
+import Notification from "../components/Notification";
 import SubPageCard from "../components/SubPageCard";
 
 export default function Events() {
@@ -7,10 +8,11 @@ export default function Events() {
         <div>
             <Head>
                 <title>UR Newman - Events</title>
-                <meta name="viewport" content="width=device-width, initial-scale=1"/>
-                <meta name="description" content="Catholic Community at the University of Rochester"/>
-                <link rel="icon" href="/favicon.ico"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <meta name="description" content="Catholic Community at the University of Rochester" />
+                <link rel="icon" href="/favicon.ico" />
             </Head>
+            <Notification message="Temporarily unavaliable. Updates are coming in the next couple of days."></Notification>
             <div className="subpage-cards pb-5">
                 <div className="container">
                     <div className="row">
@@ -18,8 +20,8 @@ export default function Events() {
                             <h1 className="display-5">Events</h1>
                         </div>
                     </div>
-                    <div className="row justify-content-center">
-                        <SubPageCard name="Adoration" img="/images/events/1.png"
+                    {/*<div className="row justify-content-center">
+                        <SubPageCard name="Home Cooked Meals" img="/images/events/1.png"
                                      description="" link="/events/adoration"/>
                         <SubPageCard name="Agape Latte" img="/images/events/2.png"
                                      description="" link="/events/agape"/>
@@ -57,10 +59,10 @@ export default function Events() {
                                      description="" link="/events/supper"/>
                         <SubPageCard name="Wilderness Retreat" img="/images/events/15.png"
                                      description="" link="/events/wilderness"/>
-                    </div>
+    </div>*/}
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </div>
     )
 }
