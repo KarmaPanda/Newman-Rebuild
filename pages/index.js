@@ -5,7 +5,7 @@ import HeroCarousel from "../components/HeroCarousel";
 import SeniorReflectionCarousel from "../components/SeniorReflectionCarousel";
 import WeeklySchedule from "../components/WeeklySchedule";
 import HeaderNotification from "../components/HeaderNotification";
-import HeroButttons from "../components/HeroButttons";
+import HeroButtons from "../components/HeroButtons";
 import WhatIsNewmanCarousel from '../components/WhatIsNewmanCarousel';
 import StudentTestimonialCarousel from '../components/StudentTestimonialCarousel';
 import MissionVisionStatement from '../components/MissionVisionStatement';
@@ -22,7 +22,7 @@ export default function Home() {
             </Head>
             <HeaderNotification />
             <HeroCarousel />
-            <HeroButttons />
+            <HeroButtons />
             {/*<TextSignUp/>*/}
             <WeeklySchedule />
             {/*<SeniorReflectionCarousel/>*/}

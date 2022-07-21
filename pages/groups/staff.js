@@ -27,18 +27,25 @@ export default function Staff() {
                 "phone": "585-275-8515"
             },
             {
-                "name": "Sr. Leandra Kosmoski, ssj",
-                "image": "/images/groups/staff/4.jpg",
-                "description": "Sr. Leandra now ministers to students at the University of Rochester at the height of a 30-year career spanning pastoral care, campus ministry, education, and spiritual direction. She is committed to guiding young adults to a deeper relationship with God. Originally a graduate of D’Youville College in Buffalo, NY, Sr. Leandra also holds master’s degrees from Loyola University in Chicago, IL, State University College of New York at Buffalo, and Creighton University in Nebraska.",
-                "email": "lkosmosk@ur.rochester.edu",
-                "phone": "585-275-8521"
-            },
-            {
                 "name": "Laurie Martin",
                 "image": "/images/groups/staff/5.jpg",
                 "description": "Laurie has served as a Finance Director at the Diocese of Rochester since 2014. In addition to directing the finances for the Catholic Newman Community at the University of Rochester, she also provides services to the Church of the Assumption, the Church of the Resurrection, the RIT Newman Catholic Community, St. Louis Church, and St. John of Rochester Catholic Church. She studied Business Administration (Accounting and Finance) at the Rochester Institute of Technology.",
                 "email": "laurie.martin@dor.org",
                 "phone": "585-586-5675,222"
+            },
+            {
+                "name": "Michelle",
+                "image": "/images/groups/staff/6.jpg",
+                "description": "Associate Director",
+                "email": "",
+                "phone": ""
+            },
+            {
+                "name": "Kate",
+                "image": "/images/groups/staff/7.jpg",
+                "description": "Office Manager & Advancement Coordinator",
+                "email": "",
+                "phone": ""
             },/*
             {
                 "name": "",
@@ -53,13 +60,13 @@ export default function Staff() {
         <div>
             <Head>
                 <title>UR Newman - Staff</title>
-                <meta name="viewport" content="width=device-width, initial-scale=1"/>
-                <meta name="description" content="Catholic Community at the University of Rochester"/>
-                <link rel="icon" href="/favicon.ico"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <meta name="description" content="Catholic Community at the University of Rochester" />
+                <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <StaffPage title="Staff" description="" members={members}/>
-            <Footer/>
+            <StaffPage title="Staff" description="" members={members} />
+            <Footer />
         </div>
     )
 }

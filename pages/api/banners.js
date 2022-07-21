@@ -6,9 +6,10 @@ const banners = (req, res) => {
         {
             banners: [
                 {
-                    imageSrc: '/images/index/06022022/1.png',
-                    mobileImageSrc: '/images/index/06022022/1-mobile.png',
-                    description: 'Summer 2022'
+                    imageSrc: '/images/index/07202022/1.png',
+                    mobileImageSrc: '/images/index/07202022/1-mobile.png',
+                    description: 'Class of 2026 Orientation',
+                    link: '/orientation'
                 },
                 {
                     imageSrc: '/images/index/04112022/8.png',
@@ -19,6 +20,6 @@ const banners = (req, res) => {
             ]
         }
     )
-}  
+}
 
 export default banners;

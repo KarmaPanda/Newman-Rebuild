@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-export default function HeroButttons() {
+export default function HeroButtons() {
     return (
         <div className="container-fluid">
             <div className="row hero-buttons">
