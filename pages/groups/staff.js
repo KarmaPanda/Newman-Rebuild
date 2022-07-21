@@ -34,18 +34,29 @@ export default function Staff() {
                 "phone": "585-586-5675,222"
             },
             {
-                "name": "Michelle",
+                "name": "Michelle Andrews-Smith",
                 "image": "/images/groups/staff/6.jpg",
-                "description": "Associate Director",
-                "email": "",
-                "phone": ""
+                "description": `Michelle enthusiastically joins the Newman Community as our Associate Director! She brings with her
+                over 20 years of Diocesan Parish experience throughout the Rochester area in the communities of Our
+                Lady of Mercy, Church of the Resurrection, and St. Louis. Michelle is an amazing mom of two. She enjoys
+                her side business selling antiques and vintage treasures. Michelle can be described as an avid reader,
+                and is frequently found spending time with her family. She attended Saint Bernard’s School of Theology
+                and Ministry, and studied Catechetical Leadership and Pastoral Ministry studies. Michelle is excited to
+                serve our students, alumni, staff and the University of Rochester.`,
+                "email": "mandre20@ur.rochester.edu",
+                "phone": "585-275-8515"
             },
             {
-                "name": "Kate",
+                "name": "Kate Somerville",
                 "image": "/images/groups/staff/7.jpg",
-                "description": "Office Manager & Advancement Coordinator",
-                "email": "",
-                "phone": ""
+                "description": `Kate joins the Newman Catholic Community as Office &amp; Advancement Manager, bringing over 4 years of
+                experience in nonprofit administration. She resides in the Neighborhood of the Arts with her two rescue
+                cats Juniper and Mimi. She enjoys watching the Buffalo Bills and is an enthusiastic fan of hockey,
+                especially the Rochester Americans and Buffalo Sabres. On the weekends, you can find her combing
+                through antique and thrift stores, visiting Lake Ontario, or enjoying museums and socializing with
+                friends.`,
+                "email": "Ksomerv2@ur.rochester.edu",
+                "phone": "585-275-8515"
             },/*
             {
                 "name": "",

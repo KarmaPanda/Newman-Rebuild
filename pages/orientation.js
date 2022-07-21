@@ -3,7 +3,7 @@ import Footer from "../components/Footer"
 import Link from "next/link"
 
 import styles from '../styles/orientation.module.scss'
-import { Container, Row, Col, Button, Tabs, Tab } from "react-bootstrap";
+import { Container, Row, Col, Button, Tabs, Tab, CardGroup, Card } from "react-bootstrap";
 import HeroImage from "../components/HeroImage";
 
 export default function Orientation() {
@@ -26,189 +26,108 @@ export default function Orientation() {
                             <p>Below, check out our orientation events and more!</p>
                         </Col>
                     </Row>
-                    <Row className={styles.grid}>
-                        <div id="grid-gallery" className="grid-gallery">
-                            <div id="grid-gallery" className="grid-gallery">
-                                <section className="grid-wrap">
-                                    <ul className="grid">
-                                        <li className="grid-sizer"></li>
-                                        <li>
-                                            <figure>
-                                                <img src="images/orientation/1.png" alt="img01" />
-                                                <figcaption><h3>Sunday Mass (Weekly) &amp; Welcome Back Picnic</h3><p>Sunday, <br /> September 12 <br /> 10:30AM &amp; 7PM</p></figcaption>
-                                            </figure>
-                                        </li>
-                                        <li>
-                                            <figure>
-                                                <img src="images/orientation/2.png" alt="img02" />
-                                                <figcaption><h3>Daily Mass</h3><p>Mondays, Tuesdays, and Thursdays, <br /> Starting September 7 <br /> 5:30PM</p></figcaption>
-                                            </figure>
-                                        </li>
-                                        <li>
-                                            <figure>
-                                                <img src="images/orientation/3.png" alt="img03" />
-                                                <figcaption><h3>Guided Meditation</h3><p>Mondays <br /> Starting August 30 <br /> 7PM</p></figcaption>
-                                            </figure>
-                                        </li>
-                                        <li>
-                                            <figure>
-                                                <img src="images/orientation/9.png" alt="img09" />
-                                                <figcaption><h3>Rosary Group</h3><p>Tuesdays <br /> Starting September 28 <br /> 6PM</p></figcaption>
-                                            </figure>
-                                        </li>
-                                        <li>
-                                            <figure>
-                                                <img src="images/orientation/4.png" alt="img04" />
-                                                <figcaption><h3>InstaMass</h3><p>Wednesdays, <br /> Starting August 25 <br /> 9PM</p></figcaption>
-                                            </figure>
-                                        </li>
-                                        <li>
-                                            <figure>
-                                                <img src="images/orientation/5.png" alt="img05" />
-                                                <figcaption><h3>Newman Nite</h3><p>Thursdays, <br /> Starting August 26 <br /> 6PM</p></figcaption>
-                                            </figure>
-                                        </li>
-                                        <li>
-                                            <figure>
-                                                <img src="images/orientation/6.png" alt="img06" />
-                                                <figcaption><h3>Adoration</h3><p>First Fridays of the Month, <br /> Starting September 3 <br /> 12:30PM</p></figcaption>
-                                            </figure>
-                                        </li>
-                                        <li>
-                                            <figure>
-                                                <img src="images/orientation/7.png" alt="img07" />
-                                                <figcaption><h3>Parent Webinar</h3><p>Wednesday, September 15 <br /> 7:30PM</p></figcaption>
-                                            </figure>
-                                        </li>
-                                        <li>
-                                            <figure>
-                                                <img src="images/orientation/8.png" alt="img08" />
-                                                <figcaption><h3>One Day Retreat:  All Things College</h3><p>Sunday, <br /> September 19</p></figcaption>
-                                            </figure>
-                                        </li>
-
-                                    </ul>
-                                </section>
-                                <section className="slideshow">
-                                    <ul>
-                                        <li>
-                                            <figure>
-                                                <figcaption>
-                                                    <h3>Sunday Mass (Weekly) &amp; Welcome Back Picnic</h3>
-                                                    <p>Location: Interfaith Chapel</p>
-                                                    <p>Date and Time: Sunday, September 12, 10:30AM &amp; 7PM</p>
-                                                    <p>&nbsp;</p>
-                                                    <p>Join us at either the 10:30AM or 7PM Mass (held weekly) and learn more about Newman from its student leaders!  Grab a free t-shirt and a nice meal as well!</p>
-                                                </figcaption>
-                                                <img src="images/orientation/1.png" alt="img01" />
-                                            </figure>
-                                        </li>
-                                        <li>
-                                            <figure>
-                                                <figcaption>
-                                                    <h3>Daily Mass</h3>
-                                                    <p>Location: Interfaith Chapel</p>
-                                                    <p>Date and Time: Mondays, Tuesdays, and Thursdays, Starting September 7, 5:30PM</p>
-                                                    <p>&nbsp;</p>
-                                                    <p>Interested in daily Mass—come check us out at 5:15PM!</p>
-                                                </figcaption>
-                                                <img src="images/orientation/2.png" alt="img02" />
-                                            </figure>
-                                        </li>
-                                        <li>
-                                            <figure>
-                                                <figcaption>
-                                                    <h3>Guided Meditation</h3>
-                                                    <p>Location: Interfaith Chapel</p>
-                                                    <p>Date and Time: Mondays, Starting August 30, 7PM</p>
-                                                    <p>&nbsp;</p>
-                                                    <p>Join Sr. Leandra for a Catholic spiritual journey like no other!</p>
-                                                </figcaption>
-                                                <img src="images/orientation/3.png" alt="img03" />
-                                            </figure>
-                                        </li>
-                                        <li>
-                                            <figure>
-                                                <figcaption>
-                                                    <h3>Rosary Group</h3>
-                                                    <p>Location: Interfaith Chapel</p>
-                                                    <p>Date and Time: Tuesdays, Starting September 28, 6PM</p>
-                                                    <p>&nbsp;</p>
-                                                    <p>Looking to prayer with Our Lady—join us at 6PM!</p>
-                                                </figcaption>
-                                                <img src="images/orientation/9.png" alt="img09" />
-                                            </figure>
-                                        </li>
-                                        <li>
-                                            <figure>
-                                                <figcaption>
-                                                    <h3>InstaMass</h3>
-                                                    <p>Location: Interfaith Chapel</p>
-                                                    <p>Date and Time: Wednesdays, Starting August 25, 9PM</p>
-                                                    <p>&nbsp;</p>
-                                                    <p>Our middle of the week daily Mass—join us!</p>
-                                                </figcaption>
-                                                <img src="images/orientation/4.png" alt="img04" />
-                                            </figure>
-                                        </li>
-                                        <li>
-                                            <figure>
-                                                <figcaption>
-                                                    <h3>Newman Nite</h3>
-                                                    <p>Location: Interfaith Chapel</p>
-                                                    <p>Date and Time: Thursday, Starting August 26, 6PM</p>
-                                                    <p>&nbsp;</p>
-                                                    <p>Interested in some free dinner and fun on August 26 (Jenga Jam) and September 2 (Game Night)?!</p>
-                                                </figcaption>
-                                                <img src="images/orientation/5.png" alt="img05" />
-                                            </figure>
-                                        </li>
-                                        <li>
-                                            <figure>
-                                                <figcaption>
-                                                    <h3>Adoration</h3>
-                                                    <p>Location: Interfaith Chapel</p>
-                                                    <p>Date and Time: First Fridays of the Month, Starting September 3, 12:30PM</p>
-                                                    <p>&nbsp;</p>
-                                                    <p>Need a minute or an hour with Christ—check out Adoration!</p>
-                                                </figcaption>
-                                                <img src="images/orientation/6.png" alt="img06" />
-                                            </figure>
-                                        </li>
-                                        <li>
-                                            <figure>
-                                                <figcaption>
-                                                    <h3>Parent Webinar</h3>
-                                                    <p>Location: Virtual (Click <a href="https://rochester.zoom.us/j/2771228739">here</a> to join us)</p>
-                                                    <p>Date and Time: Wednesday, September 15, 7:30PM</p>
-                                                    <p>&nbsp;</p>
-                                                    <p>Curious about Newman and what we can do to help your student?  Join us to learn more about our community and ask any questions you might have!</p>
-                                                </figcaption>
-                                                <img src="images/orientation/7.png" alt="img07" />
-                                            </figure>
-                                        </li>
-                                        <li>
-                                            <figure>
-                                                <figcaption>
-                                                    <h3>One Day Retreat:  All Things College</h3>
-                                                    <p>Location: Interfaith Chapel (Click <a href="https://secure.lglforms.com/form_engine/s/yp_le6CLvfUGLMQ8tS6T9g">here</a> to register)</p>
-                                                    <p>Date and Time: Sunday, September 19</p>
-                                                    <p>&nbsp;</p>
-                                                    <p>Meet some friends; learn how to navigate college, its stresses and joys; find God as well!</p>
-                                                </figcaption>
-                                                <img src="images/orientation/8.png" alt="img08" />
-                                            </figure>
-                                        </li>
-                                    </ul>
-                                    <nav>
-                                        <span className="fa nav-prev"></span>
-                                        <span className="fa nav-next"></span>
-                                        <span className="fa nav-close"></span>
-                                    </nav>
-                                </section>
-                            </div>
-                        </div>
+                    <Row xs={1} md={4} className={`${styles.orientationCards} g-4`}>
+                        <Col>
+                            <Card>
+                                <Card.Img variant="top" src="images/orientation/1.png" />
+                                <Card.Body>
+                                    <Card.Title>Placeholder Event Title</Card.Title>
+                                    <Card.Text>
+                                        Placeholder Date
+                                    </Card.Text>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                        <Col>
+                            <Card>
+                                <Card.Img variant="top" src="images/orientation/2.png" />
+                                <Card.Body>
+                                    <Card.Title>Placeholder Event Title</Card.Title>
+                                    <Card.Text>
+                                        Placeholder Date
+                                    </Card.Text>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                        <Col>
+                            <Card>
+                                <Card.Img variant="top" src="images/orientation/3.png" />
+                                <Card.Body>
+                                    <Card.Title>Placeholder Event Title</Card.Title>
+                                    <Card.Text>
+                                        Placeholder Date
+                                    </Card.Text>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                        <Col>
+                            <Card>
+                                <Card.Img variant="top" src="images/orientation/4.png" />
+                                <Card.Body>
+                                    <Card.Title>Placeholder Event Title</Card.Title>
+                                    <Card.Text>
+                                        Placeholder Date
+                                    </Card.Text>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                        <Col>
+                            <Card>
+                                <Card.Img variant="top" src="images/orientation/5.png" />
+                                <Card.Body>
+                                    <Card.Title>Placeholder Event Title</Card.Title>
+                                    <Card.Text>
+                                        Placeholder Date
+                                    </Card.Text>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                        <Col>
+                            <Card>
+                                <Card.Img variant="top" src="images/orientation/6.png" />
+                                <Card.Body>
+                                    <Card.Title>Placeholder Event Title</Card.Title>
+                                    <Card.Text>
+                                        Placeholder Date
+                                    </Card.Text>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                        <Col>
+                            <Card>
+                                <Card.Img variant="top" src="images/orientation/7.png" />
+                                <Card.Body>
+                                    <Card.Title>Placeholder Event Title</Card.Title>
+                                    <Card.Text>
+                                        Placeholder Date
+                                    </Card.Text>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                        <Col>
+                            <Card>
+                                <Card.Img variant="top" src="images/orientation/8.png" />
+                                <Card.Body>
+                                    <Card.Title>Placeholder Event Title</Card.Title>
+                                    <Card.Text>
+                                        Placeholder Date
+                                    </Card.Text>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                        <Col>
+                            <Card>
+                                <Card.Img variant="top" src="images/orientation/9.png" />
+                                <Card.Body>
+                                    <Card.Title>Placeholder Event Title</Card.Title>
+                                    <Card.Text>
+                                        Placeholder Date
+                                    </Card.Text>
+                                </Card.Body>
+                            </Card>
+                        </Col>
                     </Row>
+
                     <Row className="text-center">
                         <Col>
                             <Link href="http://www.urnewman.org/update" passHref>
@@ -332,20 +251,6 @@ export default function Orientation() {
                     </Tab>
                 </Tabs>
             </section>
-
-            <script type="text/javascript" src="../js/modernizr.custom.js"></script>
-            <script type="text/javascript" src="../js/imagesloaded.pkgd.min.js"></script>
-            <script type="text/javascript" src="../js/masonry.pkgd.min.js"></script>
-            <script type="text/javascript" src="../js/classie.js"></script>
-            <script type="text/javascript" src="../js/cbpGridGallery.js"></script>
-            <script
-                type='text/javascript'
-                dangerouslySetInnerHTML={{
-                    __html: `
-                        new CBPGridGallery(document.getElementById('grid-gallery'));
-                    `,
-                }}
-            />
 
             <Footer />
         </div>
