@@ -7,7 +7,7 @@ export default function StudentStaff() {
         [
             {
                 "name": "Sarah Desiderio",
-                "image": "/images/groups/student-leadership/student-staff/2.jpg",
+                "image": "/images/groups/student-leadership/student-staff/2.JPG",
                 "description": "Sarah, a member of the class of 2025 studying Health, Behavior, and Society, is involved with Newman's St. Sebastian Society, while also serving as one of the St. Sebastian Society/Yes Pa Coordinators. In her freetime, she is a varsity athlete for the Swimming and Diving team here at UR, an active member of the Fellowship of Christian Athletes (FCA), and enjoys exploring new cities/places with her friends and family.",
                 "email": "sdesider@u.rochester.edu"
             },
