@@ -17,7 +17,7 @@ export default function Home() {
             <Head>
                 <title>UR Newman - Home</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <meta name="description" content="Catholic Community at the University of Rochester" />
+                <meta name="description" content="Newman is a vibrant, Christ-centered community oriented towards students, which fosters spiritual and intellectual growth, grounded in the Catholic tradition." />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <HeaderNotification />

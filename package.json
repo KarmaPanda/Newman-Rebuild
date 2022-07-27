@@ -39,5 +39,15 @@
         "eslint-config-next": "12.1.4",
         "typescript": "^4.6.3",
         "webpack": "^5.72.0"
-    }
+    },
+    "keywords": [
+        "newman",
+        "catholic",
+        "community",
+        "university",
+        "rochester"
+    ],
+    "author": "Desmond Lai",
+    "license": "ISC",
+    "description": "Web app developed as an Undergraduate for the University of Rochester's Newman Catholic Community."
 }

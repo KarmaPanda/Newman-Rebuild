@@ -30,9 +30,9 @@ export default function Orientation() {
                         <Col>
                             <Card>
                                 <Card.Img variant="top" src="images/orientation/1.png" />
-                                <Card.Body>
-                                    <Card.Title>Placeholder Event Title</Card.Title>
-                                    <Card.Text>
+                                <Card.Body className={styles.cardBody}>
+                                    <Card.Title className={styles.cardTitle}>Placeholder Event Title</Card.Title>
+                                    <Card.Text className={styles.cardText}>
                                         Placeholder Date
                                     </Card.Text>
                                 </Card.Body>
@@ -41,9 +41,9 @@ export default function Orientation() {
                         <Col>
                             <Card>
                                 <Card.Img variant="top" src="images/orientation/2.png" />
-                                <Card.Body>
-                                    <Card.Title>Placeholder Event Title</Card.Title>
-                                    <Card.Text>
+                                <Card.Body className={styles.cardBody}>
+                                    <Card.Title className={styles.cardTitle}>Placeholder Event Title</Card.Title>
+                                    <Card.Text className={styles.cardText}>
                                         Placeholder Date
                                     </Card.Text>
                                 </Card.Body>
@@ -52,9 +52,9 @@ export default function Orientation() {
                         <Col>
                             <Card>
                                 <Card.Img variant="top" src="images/orientation/3.png" />
-                                <Card.Body>
-                                    <Card.Title>Placeholder Event Title</Card.Title>
-                                    <Card.Text>
+                                <Card.Body className={styles.cardBody}>
+                                    <Card.Title className={styles.cardTitle}>Placeholder Event Title</Card.Title>
+                                    <Card.Text className={styles.cardText}>
                                         Placeholder Date
                                     </Card.Text>
                                 </Card.Body>
@@ -63,9 +63,9 @@ export default function Orientation() {
                         <Col>
                             <Card>
                                 <Card.Img variant="top" src="images/orientation/4.png" />
-                                <Card.Body>
-                                    <Card.Title>Placeholder Event Title</Card.Title>
-                                    <Card.Text>
+                                <Card.Body className={styles.cardBody}>
+                                    <Card.Title className={styles.cardTitle}>Placeholder Event Title</Card.Title>
+                                    <Card.Text className={styles.cardText}>
                                         Placeholder Date
                                     </Card.Text>
                                 </Card.Body>
@@ -74,9 +74,9 @@ export default function Orientation() {
                         <Col>
                             <Card>
                                 <Card.Img variant="top" src="images/orientation/5.png" />
-                                <Card.Body>
-                                    <Card.Title>Placeholder Event Title</Card.Title>
-                                    <Card.Text>
+                                <Card.Body className={styles.cardBody}>
+                                    <Card.Title className={styles.cardTitle}>Placeholder Event Title</Card.Title>
+                                    <Card.Text className={styles.cardText}>
                                         Placeholder Date
                                     </Card.Text>
                                 </Card.Body>
@@ -85,9 +85,9 @@ export default function Orientation() {
                         <Col>
                             <Card>
                                 <Card.Img variant="top" src="images/orientation/6.png" />
-                                <Card.Body>
-                                    <Card.Title>Placeholder Event Title</Card.Title>
-                                    <Card.Text>
+                                <Card.Body className={styles.cardBody}>
+                                    <Card.Title className={styles.cardTitle}>Placeholder Event Title</Card.Title>
+                                    <Card.Text className={styles.cardText}>
                                         Placeholder Date
                                     </Card.Text>
                                 </Card.Body>
@@ -96,9 +96,9 @@ export default function Orientation() {
                         <Col>
                             <Card>
                                 <Card.Img variant="top" src="images/orientation/7.png" />
-                                <Card.Body>
-                                    <Card.Title>Placeholder Event Title</Card.Title>
-                                    <Card.Text>
+                                <Card.Body className={styles.cardBody}>
+                                    <Card.Title className={styles.cardTitle}>Placeholder Event Title</Card.Title>
+                                    <Card.Text className={styles.cardText}>
                                         Placeholder Date
                                     </Card.Text>
                                 </Card.Body>
@@ -107,9 +107,9 @@ export default function Orientation() {
                         <Col>
                             <Card>
                                 <Card.Img variant="top" src="images/orientation/8.png" />
-                                <Card.Body>
-                                    <Card.Title>Placeholder Event Title</Card.Title>
-                                    <Card.Text>
+                                <Card.Body className={styles.cardBody}>
+                                    <Card.Title className={styles.cardTitle}>Placeholder Event Title</Card.Title>
+                                    <Card.Text className={styles.cardText}>
                                         Placeholder Date
                                     </Card.Text>
                                 </Card.Body>
@@ -118,9 +118,9 @@ export default function Orientation() {
                         <Col>
                             <Card>
                                 <Card.Img variant="top" src="images/orientation/9.png" />
-                                <Card.Body>
-                                    <Card.Title>Placeholder Event Title</Card.Title>
-                                    <Card.Text>
+                                <Card.Body className={styles.cardBody}>
+                                    <Card.Title className={styles.cardTitle}>Placeholder Event Title</Card.Title>
+                                    <Card.Text className={styles.cardText}>
                                         Placeholder Date
                                     </Card.Text>
                                 </Card.Body>
