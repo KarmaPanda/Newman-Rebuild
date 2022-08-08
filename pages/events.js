@@ -40,6 +40,8 @@ export default function Events() {
                     <div className="row justify-content-center">
                         <SubPageCard name="Orientation" img="/images/events/7.JPG"
                                      description="" link="/orientation"/>
+                        <SubPageCard name="Case" img="/images/events/7.JPG"
+                                     description="" link="events/case"/>
                     </div>
                 </div>
             </div>
