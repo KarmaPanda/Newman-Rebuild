@@ -14,7 +14,7 @@ export default function Staff() {
             },
             {
                 "name": "Breanna Dauphinee",
-                "image": "/images/groups/staff/2.jpg",
+                "image": "/images/groups/staff/breanna.jpg",
                 "description": "Breanna, a Rochester, NY, native, graduated from Nazareth College with a degree in Religious Studies, and joined the staff of the Newman Community as the Program Assistant for Campus Ministry. She has worked and volunteered in Faith Formation and Youth Ministry Programs, along with serving as a cantor in the Church for many years.",
                 "email": "bdauphin@ur.rochester.edu",
                 "phone": "585-275-8515"
@@ -35,7 +35,7 @@ export default function Staff() {
             },
             {
                 "name": "Michelle Andrews-Smith",
-                "image": "/images/groups/staff/6.jpg",
+                "image": "/images/groups/staff/michelle.jpeg",
                 "description": `Michelle enthusiastically joins the Newman Community as our Associate Director! She brings with her
                 over 20 years of Diocesan Parish experience throughout the Rochester area in the communities of Our
                 Lady of Mercy, Church of the Resurrection, and St. Louis. Michelle is an amazing mom of two. She enjoys
@@ -48,7 +48,7 @@ export default function Staff() {
             },
             {
                 "name": "Kate Somerville",
-                "image": "/images/groups/staff/7.jpg",
+                "image": "/images/groups/staff/kate.jpg",
                 "description": `Kate joins the Newman Catholic Community as Office &amp; Advancement Manager, bringing over 4 years of
                 experience in nonprofit administration. She resides in the Neighborhood of the Arts with her two rescue
                 cats Juniper and Mimi. She enjoys watching the Buffalo Bills and is an enthusiastic fan of hockey,

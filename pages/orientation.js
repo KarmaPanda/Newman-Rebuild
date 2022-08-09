@@ -29,60 +29,60 @@ export default function Orientation() {
                     <Row xs={1} md={4} className={`${styles.orientationCards} g-4`}>
                         <Col>
                             <Card>
-                                <Card.Img variant="top" src="images/orientation/1.png" />
+                                <Card.Img variant="top" src="images/orientation/dailymass.jpg" />
                                 <Card.Body className={styles.cardBody}>
-                                    <Card.Title className={styles.cardTitle}>Placeholder Event Title</Card.Title>
+                                    <Card.Title className={styles.cardTitle}>Daily & Sunday Mass</Card.Title>
                                     <Card.Text className={styles.cardText}>
-                                        Placeholder Date
+                                        Mon/Tue/Thur & Sun
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
                         </Col>
                         <Col>
                             <Card>
-                                <Card.Img variant="top" src="images/orientation/2.png" />
+                                <Card.Img variant="top" src="images/orientation/instamass.jpg" />
                                 <Card.Body className={styles.cardBody}>
-                                    <Card.Title className={styles.cardTitle}>Placeholder Event Title</Card.Title>
+                                    <Card.Title className={styles.cardTitle}>InstaMass</Card.Title>
                                     <Card.Text className={styles.cardText}>
-                                        Placeholder Date
+                                        Wednesdays 9pm
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
                         </Col>
                         <Col>
                             <Card>
-                                <Card.Img variant="top" src="images/orientation/3.png" />
+                                <Card.Img variant="top" src="images/orientation/picnic.jpg" />
                                 <Card.Body className={styles.cardBody}>
-                                    <Card.Title className={styles.cardTitle}>Placeholder Event Title</Card.Title>
+                                    <Card.Title className={styles.cardTitle}>Picnic</Card.Title>
                                     <Card.Text className={styles.cardText}>
-                                        Placeholder Date
+                                        September 4
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
                         </Col>
                         <Col>
                             <Card>
-                                <Card.Img variant="top" src="images/orientation/4.png" />
+                                <Card.Img variant="top" src="images/orientation/jenga.jpg" />
                                 <Card.Body className={styles.cardBody}>
-                                    <Card.Title className={styles.cardTitle}>Placeholder Event Title</Card.Title>
+                                    <Card.Title className={styles.cardTitle}>Jenga Jam</Card.Title>
                                     <Card.Text className={styles.cardText}>
-                                        Placeholder Date
+                                        August 29
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
                         </Col>
                         <Col>
                             <Card>
-                                <Card.Img variant="top" src="images/orientation/5.png" />
+                                <Card.Img variant="top" src="images/orientation/building.jpg" />
                                 <Card.Body className={styles.cardBody}>
-                                    <Card.Title className={styles.cardTitle}>Placeholder Event Title</Card.Title>
+                                    <Card.Title className={styles.cardTitle}>Newman Building Project</Card.Title>
                                     <Card.Text className={styles.cardText}>
-                                        Placeholder Date
+                                        ..
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
                         </Col>
-                        <Col>
+                        {/* <Col>
                             <Card>
                                 <Card.Img variant="top" src="images/orientation/6.png" />
                                 <Card.Body className={styles.cardBody}>
@@ -92,19 +92,20 @@ export default function Orientation() {
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
-                        </Col>
+                        </Col> */}
                         <Col>
                             <Card>
-                                <Card.Img variant="top" src="images/orientation/7.png" />
+                                <Card.Img variant="top" src="images/orientation/shirts.jpg
+                                " />
                                 <Card.Body className={styles.cardBody}>
-                                    <Card.Title className={styles.cardTitle}>Placeholder Event Title</Card.Title>
+                                    <Card.Title className={styles.cardTitle}>T-shirt Giveaway</Card.Title>
                                     <Card.Text className={styles.cardText}>
-                                        Placeholder Date
+                                        September 4
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
                         </Col>
-                        <Col>
+                        {/* <Col>
                             <Card>
                                 <Card.Img variant="top" src="images/orientation/8.png" />
                                 <Card.Body className={styles.cardBody}>
@@ -114,8 +115,8 @@ export default function Orientation() {
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
-                        </Col>
-                        <Col>
+                        </Col> */}
+                        {/* <Col>
                             <Card>
                                 <Card.Img variant="top" src="images/orientation/9.png" />
                                 <Card.Body className={styles.cardBody}>
@@ -125,10 +126,10 @@ export default function Orientation() {
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
-                        </Col>
+                        </Col> */}
                     </Row>
 
-                    <Row className="text-center">
+                    <Row className="text-center p-5">
                         <Col>
                             <Link href="http://www.urnewman.org/update" passHref>
                                 <Button className={styles.registerBtn} variant="light">

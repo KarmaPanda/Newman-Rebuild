@@ -36,8 +36,8 @@ export default function Events() {
                             description="" link="/orientation" />
                     </div>
                     <div className="row justify-content-center">
-                        <SubPageCard name="Case" img="/images/events/4.PNG"
-                            description="" link="/events/mass" />
+                        <SubPageCard name="Creating A Safe Environment" img="/images/case/case1.png"
+                            description="" link="/case" />
                     </div>
                 </div>
             </div>
