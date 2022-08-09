@@ -21,27 +21,23 @@ export default function Events() {
                     </div>
                     <div className="row justify-content-center">
                         <SubPageCard name="Home Cooked Meals" img="/images/events/1.jpg"
-                                     description="" link="/events/meals"/>
+                            description="" link="/events/meals" />
                         <SubPageCard name="Spiritual Events" img="/images/events/2.jpg"
-                                     description="" link="/events/spiritual"/>
+                            description="" link="/events/spiritual" />
                         <SubPageCard name="Building the Faith" img="/images/events/3.jpg"
-                                     description="" link="/events/faith"/>
+                            description="" link="/events/faith" />
                     </div>
-
                     <div className="row justify-content-center">
                         <SubPageCard name="Mass" img="/images/events/4.PNG"
-                                     description="" link="/events/mass"/>
+                            description="" link="/events/mass" />
                         <SubPageCard name="Retreats" img="/images/events/5.jpg"
-                                     description="" link="/events/retreats"/>
-                        <SubPageCard name="St.Sebastian Society" img="/images/events/6.jpg"
-                                     description="" link="/groups/st-sebastian"/>
-                    </div>
-
-                    <div className="row justify-content-center">
+                            description="" link="/events/retreats" />
                         <SubPageCard name="Orientation" img="/images/events/7.JPG"
-                                     description="" link="/orientation"/>
-                        <SubPageCard name="Case" img="/images/events/7.JPG"
-                                     description="" link="events/case"/>
+                            description="" link="/orientation" />
+                    </div>
+                    <div className="row justify-content-center">
+                        <SubPageCard name="Case" img="/images/events/4.PNG"
+                            description="" link="/events/mass" />
                     </div>
                 </div>
             </div>
