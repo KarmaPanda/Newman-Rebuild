@@ -19,7 +19,8 @@ export default function Publications() {
                             <h1 className="display-5 pb-5">Publications</h1>
                             <div className="pb-5">
                                 <h3>Annual Reports</h3>
-                                <p><Link href="https://drive.google.com/open?id=1fkyFdDmnC_D-4LcslBS5aRTwI3Dju6_W" passHref>2020-2021</Link></p>
+                                <p><Link href= "https://drive.google.com/drive/u/0/search?q=2021-2022%20Newman%20Anual" passHref>2021-2022 </Link><</p>
+                                <p><Link> href="https://drive.google.com/open?id=1fkyFdDmnC_D-4LcslBS5aRTwI3Dju6_W" passHref>2020-2021</Link></p>
                                 <p><Link href="https://drive.google.com/open?id=1GfNu-sRgn3Fdu6V5EUPsFFq__yoaT36J" passHref>2019-2020</Link></p>
                                 <p><Link href="https://drive.google.com/open?id=1AuWAobwK61gdXUArvstIdYcz-JTXvJPm" passHref>2018-2019</Link></p>
                                 <p><Link href="https://drive.google.com/open?id=1Tq9rbO022azQ3qCT137bJLqeVb7BQv1B" passHref>2017-2018</Link></p>
