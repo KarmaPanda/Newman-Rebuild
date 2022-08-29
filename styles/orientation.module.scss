@@ -1,0 +1,100 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Yesteryear);
+
+// Font Variables
+$yester-year: 'Yesteryear', cursive;
+
+.header {
+    padding-top: 1em;
+    text-align: center;
+}
+
+.header h1 {
+    color: #ffdd00;
+    font-size: calc(3em + 1vmin);
+    font-family: $yester-year;
+}
+
+.header p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 150%;
+}
+
+.grid figcaption {
+    background-color: #ffdd00;
+}
+
+.grid figcaption h3 {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.grid figcaption p {
+    font-size: medium;
+    color: #000000;
+}
+
+.videoContainer {
+    margin-top: 4em;
+}
+
+.orientationSection {
+    background-color: #00467f;
+}
+
+.orientationSection h3 {
+    color: #00467f;
+}
+
+.orientationSection p,
+.orientationSection h3 {
+    color: whitesmoke;
+}
+
+.registerContainer {
+    margin-top: 2em;
+    text-align: center;
+}
+
+.registerBtn {
+    background: white;
+    color: black;
+    border: unset;
+    padding: 1em;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.registerBtn:hover {
+    background: black;
+    color: white;
+    text-decoration: underline;
+}
+
+.orientationTabButtons button {
+    color: #ffdd00;
+}
+
+.orientationTab p,
+.orientationTab li {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.orientationTab ul {
+    padding-left: 3em;
+}
+
+.orientationCards p {
+    color: black;
+}
+
+.cardTitle {
+    color: #00467f;
+    font-weight: bold;
+}
+
+.cardBody {
+    background-color: #ffdd00;
+}

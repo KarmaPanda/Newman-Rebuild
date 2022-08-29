@@ -8,29 +8,29 @@ export default function TextSignUp() {
                         will inform you of our Daily Mass schedule and other special events at Newman.</p>
                 </div>
                 <div className="col-md-10 mx-auto col-lg-5">
-                    <form className="p-4 p-md-5 border rounded-3 bg-light">
+                    <form method="post" action="https://app.flocknote.com/group/50556/addToGroupFromOutside" target="_blank" className="p-4 p-md-5 border rounded-3 bg-light">
                         <div className="form-floating mb-3">
-                            <input type="text" className="form-control" id="firstName"
-                                   placeholder="John"/>
-                            <label htmlFor="firstName">First Name</label>
+                            <input type="text" className="form-control" id="fName" name="fName"
+                                placeholder="John" />
+                            <label htmlFor="fName">First Name</label>
                         </div>
                         <div className="form-floating mb-3">
-                            <input type="text" className="form-control" id="lastName"
-                                   placeholder="Doe"/>
-                            <label htmlFor="lastName">Last Name</label>
+                            <input type="text" className="form-control" id="lName" name="lName"
+                                placeholder="Doe" />
+                            <label htmlFor="lName">Last Name</label>
                         </div>
                         <div className="form-floating mb-3">
-                            <input type="email" className="form-control" id="email"
-                                   placeholder="name@example.com"/>
+                            <input type="email" className="form-control" id="email" name="email"
+                                placeholder="name@example.com" />
                             <label htmlFor="email">Email Address</label>
                         </div>
                         <div className="form-floating mb-3">
-                            <input type="phone" className="form-control" id="phone"
-                                   placeholder="Password"/>
-                            <label htmlFor="phone">Phone Number</label>
+                            <input type="tel" className="form-control" id="mobile_phone" name="mobile_phone"
+                                placeholder="Password" />
+                            <label htmlFor="mobile_phone">Phone Number</label>
                         </div>
-                        <button className="w-100 btn btn-lg btn-primary" type="submit" disabled>Coming Soon</button>
-                        <hr className="my-4"/>
+                        <button className="w-100 btn btn-lg btn-primary" type="submit">Submit</button>
+                        <hr className="my-4" />
                         <small className="text-muted">By clicking Sign up, you agree to receive text messages. Msg & Data rates may apply.</small>
                     </form>
                 </div>

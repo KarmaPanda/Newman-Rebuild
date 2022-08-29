@@ -14,7 +14,7 @@ export default function Staff() {
             },
             {
                 "name": "Breanna Dauphinee",
-                "image": "/images/groups/staff/2.jpg",
+                "image": "/images/groups/staff/breanna.jpg",
                 "description": "Breanna, a Rochester, NY, native, graduated from Nazareth College with a degree in Religious Studies, and joined the staff of the Newman Community as the Program Assistant for Campus Ministry. She has worked and volunteered in Faith Formation and Youth Ministry Programs, along with serving as a cantor in the Church for many years.",
                 "email": "bdauphin@ur.rochester.edu",
                 "phone": "585-275-8515"
@@ -27,18 +27,36 @@ export default function Staff() {
                 "phone": "585-275-8515"
             },
             {
-                "name": "Sr. Leandra Kosmoski, ssj",
-                "image": "/images/groups/staff/4.jpg",
-                "description": "Sr. Leandra now ministers to students at the University of Rochester at the height of a 30-year career spanning pastoral care, campus ministry, education, and spiritual direction. She is committed to guiding young adults to a deeper relationship with God. Originally a graduate of D’Youville College in Buffalo, NY, Sr. Leandra also holds master’s degrees from Loyola University in Chicago, IL, State University College of New York at Buffalo, and Creighton University in Nebraska.",
-                "email": "lkosmosk@ur.rochester.edu",
-                "phone": "585-275-8521"
-            },
-            {
                 "name": "Laurie Martin",
                 "image": "/images/groups/staff/5.jpg",
                 "description": "Laurie has served as a Finance Director at the Diocese of Rochester since 2014. In addition to directing the finances for the Catholic Newman Community at the University of Rochester, she also provides services to the Church of the Assumption, the Church of the Resurrection, the RIT Newman Catholic Community, St. Louis Church, and St. John of Rochester Catholic Church. She studied Business Administration (Accounting and Finance) at the Rochester Institute of Technology.",
                 "email": "laurie.martin@dor.org",
                 "phone": "585-586-5675,222"
+            },
+            {
+                "name": "Michelle Andrews-Smith",
+                "image": "/images/groups/staff/michelle.jpeg",
+                "description": `Michelle enthusiastically joins the Newman Community as our Associate Director! She brings with her
+                over 20 years of Diocesan Parish experience throughout the Rochester area in the communities of Our
+                Lady of Mercy, Church of the Resurrection, and St. Louis. Michelle is an amazing mom of two. She enjoys
+                her side business selling antiques and vintage treasures. Michelle can be described as an avid reader,
+                and is frequently found spending time with her family. She attended Saint Bernard’s School of Theology
+                and Ministry, and studied Catechetical Leadership and Pastoral Ministry studies. Michelle is excited to
+                serve our students, alumni, staff and the University of Rochester.`,
+                "email": "mandre20@ur.rochester.edu",
+                "phone": "585-275-8515"
+            },
+            {
+                "name": "Kate Somerville",
+                "image": "/images/groups/staff/kate.jpg",
+                "description": `Kate joins the Newman Catholic Community as Office &amp; Advancement Manager, bringing over 4 years of
+                experience in nonprofit administration. She resides in the Neighborhood of the Arts with her two rescue
+                cats Juniper and Mimi. She enjoys watching the Buffalo Bills and is an enthusiastic fan of hockey,
+                especially the Rochester Americans and Buffalo Sabres. On the weekends, you can find her combing
+                through antique and thrift stores, visiting Lake Ontario, or enjoying museums and socializing with
+                friends.`,
+                "email": "Ksomerv2@ur.rochester.edu",
+                "phone": "585-275-8515"
             },/*
             {
                 "name": "",
@@ -53,13 +71,13 @@ export default function Staff() {
         <div>
             <Head>
                 <title>UR Newman - Staff</title>
-                <meta name="viewport" content="width=device-width, initial-scale=1"/>
-                <meta name="description" content="Catholic Community at the University of Rochester"/>
-                <link rel="icon" href="/favicon.ico"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <meta name="description" content="Catholic Community at the University of Rochester" />
+                <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <StaffPage title="Staff" description="" members={members}/>
-            <Footer/>
+            <StaffPage title="Staff" description="" members={members} />
+            <Footer />
         </div>
     )
 }

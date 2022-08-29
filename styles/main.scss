@@ -1,6 +1,7 @@
 @import "~bootstrap/scss/bootstrap.scss";
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+
 a {
     text-decoration: none;
 }
@@ -131,7 +132,7 @@ footer {
 .header-notification {
     text-align: center;
     background: #fac600
-    /*background: rgb(0, 70, 127);*/
+        /*background: rgb(0, 70, 127);*/
 }
 
 .header-notification a {

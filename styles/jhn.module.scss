@@ -1,0 +1,43 @@
+.wrapper {
+    background: no-repeat 50% 25% fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.topFiller {
+    height: 78vh;
+}
+
+.bottomFiller {
+    height: 100px;
+}
+
+.title {
+    text-align: center;
+    background-color: #fac800c2;
+    padding: 1em;
+}
+
+.title h1 {
+    color: #000000;
+    font-family: Roboto Slab;
+    font-size: 4rem;
+    font-weight: 1000;
+}
+
+.learnMore {
+    background-color: #efefefde;
+}
+
+.seal img {
+    width: 25ch;
+    max-height: 100%;
+}
+
+@media (max-width: 480px) {
+    .title h1 {
+        font-size: 2rem;
+    }
+}

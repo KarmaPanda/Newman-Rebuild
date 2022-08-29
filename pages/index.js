@@ -5,7 +5,7 @@ import HeroCarousel from "../components/HeroCarousel";
 import SeniorReflectionCarousel from "../components/SeniorReflectionCarousel";
 import WeeklySchedule from "../components/WeeklySchedule";
 import HeaderNotification from "../components/HeaderNotification";
-import HeroButttons from "../components/HeroButttons";
+import HeroButtons from "../components/HeroButtons";
 import WhatIsNewmanCarousel from '../components/WhatIsNewmanCarousel';
 import StudentTestimonialCarousel from '../components/StudentTestimonialCarousel';
 import MissionVisionStatement from '../components/MissionVisionStatement';
@@ -17,12 +17,12 @@ export default function Home() {
             <Head>
                 <title>UR Newman - Home</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <meta name="description" content="Catholic Community at the University of Rochester" />
+                <meta name="description" content="Newman is a vibrant, Christ-centered community oriented towards students, which fosters spiritual and intellectual growth, grounded in the Catholic tradition." />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <HeaderNotification />
             <HeroCarousel />
-            <HeroButttons />
+            <HeroButtons />
             {/*<TextSignUp/>*/}
             <WeeklySchedule />
             {/*<SeniorReflectionCarousel/>*/}
@@ -39,7 +39,7 @@ export default function Home() {
                         <div className="col-sm-6">
                             <div className="footer-phone">
                                 <p><i className="fas fa-phone-alt fa-3x" /></p>
-                                <p className="h2"><a href="tel:585-275-8515">+1 (585) 275-8515</a></p>
+                                <p className="h2"><a href="tel:585-275-8515">(585) 275-8515</a></p>
                             </div>
                             <div className="footer-email">
                                 <p><i className="fas fa-inbox fa-3x" /></p>

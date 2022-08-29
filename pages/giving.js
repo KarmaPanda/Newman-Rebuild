@@ -20,7 +20,7 @@ export default function Giving() {
                     </div>
                     <div className="row justify-content-center">
                         <SubPageCard name="Annual Appeals" img="/images/giving/1.jpg"
-                            description="" link="/giving/annualappeal" />
+                            description="" link="https://securelb.imodules.com/s/1676/giving1.aspx?sid=1676&gid=2&pgid=808&cid=1640&sort=1&bledit=1&dids=220.275&appealcode=13C2" />
                         {/*<SubPageCard name="Annual Appeals" img="/images/giving/1.jpg"
                             description="" link="/giving/annual-appeal" />*/}
                         <SubPageCard name="Building Project" img="/images/giving/2.jpg"
@@ -33,14 +33,12 @@ export default function Giving() {
                     <div className="row justify-content-center">
                         <SubPageCard name="George Eastman Circle (5-Year Pledged Giving)" img="/images/giving/4.png"
                             description="" link="/giving/george-eastman-circle" />
-                        {/*<SubPageCard name="George Eastman Circle (5-Year Pledged Giving)" img="/images/giving/4.png"
-                            description="" link="/giving/george-eastman-circle" />*/}
                         <SubPageCard name="Mass Collection" img="/images/giving/5.jpg"
                             description="" link="/giving/collection" />
                         {/*<SubPageCard name="Special Appeals" img="/images/giving/6.jpg"
                             description="" link="/giving/special-appeal" />*/}
                         <SubPageCard name="Special Appeals" img="/images/giving/6.jpg"
-                            description="" link="/giving/specialappeal" />
+                            description="" link="https://securelb.imodules.com/s/1676/giving19/giving19.aspx?sid=1676&gid=2&pgid=8922&cid=13809&sort=1&bledit=1&dids=220.275&appealcode=22C2V" />
                     </div>
                     <div className="row justify-content-center">
                         <SubPageCard name="Wilson Society (Planned Giving)" img="/images/giving/7.png"
