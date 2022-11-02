@@ -16,6 +16,12 @@ const banners = (req, res) => {
                     mobileImageSrc: '/images/index/04112022/8-mobile.png',
                     description: 'Building Project',
                     link: '/building'
+                },
+                {
+                    imageSrc: '/images/index/11022022/img.png',
+                    mobileImageSrc: '/images/index/07202022/1-mobile.png',
+                    description: 'Easter old image',
+                    link: '/orientation'
                 }
             ]
         }

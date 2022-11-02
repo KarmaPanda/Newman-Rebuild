@@ -39,11 +39,6 @@ export default function Building() {
                     <div className="container pt-5">
                         <div className="row">
                             <div className={styles.quoteSection}>
-                                <div className={`${styles.videoContainer}`}>
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/MB7n6Mm6lT4" frameBorder="0"
-                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                        allowFullScreen></iframe>
-                                </div>
                                 <div className="row">
                                     <div className="col p-5">
                                         <div className={styles.utopia}>
@@ -243,7 +238,12 @@ export default function Building() {
                             <div className={styles.utopia}>
                                 <h1>A message of support</h1>
                             </div>
-                            <div className={styles.videoContainer}>
+                            <div className={`${styles.videoContainer} mb-4`}>
+                                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/MB7n6Mm6lT4" frameBorder="0"
+                                                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                                    allowFullScreen></iframe>
+                                                            </div>
+                            <div className={`${styles.videoContainer}`}>
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/nv2qsE-edWU" frameBorder="0"
                                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                     allowFullScreen></iframe>
