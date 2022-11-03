@@ -137,7 +137,7 @@ export default function Building() {
                 <div className={styles.content}>
                     <div className="container">
                         <div className={`${styles.fullSection}`}>
-                            <img src="images/building/timeline.png" alt="Building Project Timeline"/>
+                            <img src="images/building/timeline_fall_2022.png" alt="Building Project Timeline"/>
                         </div>
                     </div>
                 </div>
