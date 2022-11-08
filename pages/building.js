@@ -32,7 +32,7 @@ export default function Building() {
 
             <main>
                 <div className={styles.buildingHero}>
-                    <img src="../images/building/buildinggraphicwithslogan3.png" alt="Newman Building Rendering"/>
+                    <img src="../images/building/buildingBannerSlogannNew05.png" alt="Newman Building Rendering"/>
                 </div>
 
                 <div className={styles.contentAlt}>
@@ -126,18 +126,12 @@ export default function Building() {
                     </div>
                 </div>
 
-                <div className={styles.content}>
-                    <div className="container">
-                        <div className={`${styles.splitSection} ${styles.utopia}`}>
-                            <h1>Where we are going</h1>
-                        </div>
-                    </div>
-                </div>
+
 
                 <div className={styles.content}>
                     <div className="container">
-                        <div className={`${styles.fullSection}`}>
-                            <img src="images/building/timeline_fall_2022.png" alt="Building Project Timeline"/>
+                        <div className={`${styles.fullSection} mp-10`}>
+                            <img src="images/building/timeline_fall_2022.png" alt="Building Project Timeline" />
                         </div>
                     </div>
                 </div>
@@ -145,7 +139,7 @@ export default function Building() {
                 <div className={styles.donation}>
                     <div className="container">
                         <div className="row">
-                            <iframe src="https://drive.google.com/file/d/1edOtGE5WMREuTOTkV4_5t4qGfLXCP-qi/preview" width="100%" height="560px"></iframe>
+                            <iframe src="https://drive.google.com/file/d/13Z6XKCIp3tPYvccuFCqSNNCbTnEdEdO3/preview" width="100%" height="560px"></iframe>
                             <div className={`py-5 col ${styles.utopiaSubhead}`}>
                                 <h3><strong>Help make this project a complete success—donate today.</strong></h3>
                                 <Link href="https://securelb.imodules.com/s/1676/giving19/giving19.aspx?sid=1676&gid=2&pgid=7030&cid=10728&sort=1&bledit=1&dids=805&appealcode=21C04" passHref>

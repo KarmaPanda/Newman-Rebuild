@@ -7,19 +7,19 @@ const banners = (req, res) => {
             banners: [
                 {
                     imageSrc: '/images/index/11022022/Fall2022banner-02.png',
-                    mobileImageSrc: '/images/index/07202022/1-mobile.png',
+                    mobileImageSrc: '/images/index/11022022/Fall2022bannerMobile-06.png',
                     description: 'Home Away from Home',
                     link: '/orientation'
                 },
                 {
                     imageSrc: '/images/index/11022022/Fall2022banner-03.png',
-                    mobileImageSrc: '/images/index/04112022/8-mobile.png',
+                    mobileImageSrc: '/images/index/11022022/Fall2022bannerMobile-08.png',
                     description: 'Building Project',
                     link: '/building'
                 },
                 {
                     imageSrc: '/images/index/11022022/Fall2022banner-04.png',
-                    mobileImageSrc: '/images/index/07202022/1-mobile.png',
+                    mobileImageSrc: '/images/index/11022022/Fall2022bannerMobile-07.png',
                     description: 'All Souls Month',
                     link: '/orientation'
                 }
