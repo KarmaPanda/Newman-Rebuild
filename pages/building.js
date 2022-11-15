@@ -128,18 +128,12 @@ export default function Building() {
 
 
 
-                <div className={styles.content}>
-                    <div className="container">
-                        <div className={`${styles.fullSection} mp-10`}>
-                            <img src="images/building/timeline_fall_2022.png" alt="Building Project Timeline" />
-                        </div>
-                    </div>
-                </div>
+
 
                 <div className={styles.donation}>
                     <div className="container">
                         <div className="row">
-                            <iframe src="https://drive.google.com/file/d/13Z6XKCIp3tPYvccuFCqSNNCbTnEdEdO3/preview" width="100%" height="560px"></iframe>
+                            <iframe src="https://drive.google.com/file/d/1ej7MekktPps_Ad9TxQwHSObbH5VfYkgp/preview" width="100%" height="560px"></iframe>
                             <div className={`py-5 col ${styles.utopiaSubhead}`}>
                                 <h3><strong>Help make this project a complete success—donate today.</strong></h3>
                                 <Link href="https://securelb.imodules.com/s/1676/giving19/giving19.aspx?sid=1676&gid=2&pgid=7030&cid=10728&sort=1&bledit=1&dids=805&appealcode=21C04" passHref>
