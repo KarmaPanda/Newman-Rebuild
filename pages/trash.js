@@ -11,10 +11,10 @@
 
 
                 //removed from building page line 131. Contained the project milestones track
-                                <div className={styles.content}>
-                                    <div className="container">
-                                        <div className={`${styles.fullSection} mp-10`}>
-                                            <img src="images/building/timeline_fall_2022.png" alt="Building Project Timeline" />
-                                        </div>
-                                    </div>
-                                </div>
+<div className={styles.content}>
+                    <div className="container">
+                        <div className={`${styles.fullSection} mp-10`}>
+                            <img src="images/building/timeline_fall_2022.png" alt="Building Project Timeline" />
+                        </div>
+                    </div>
+                </div>
