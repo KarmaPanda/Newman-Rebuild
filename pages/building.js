@@ -128,7 +128,7 @@ export default function Building() {
 
 
 
-                <div className={styles.content}>
+    <div className={styles.content}>
                     <div className="container">
                         <div className={`${styles.fullSection} mp-10`}>
                             <img src="images/building/timeline_fall_2022.png" alt="Building Project Timeline" />
