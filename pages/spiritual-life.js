@@ -38,7 +38,7 @@ export default function SpiritualLife() {
                                 confession anytime by appointment; to do so, please contact
                                 Fr. Brian Cool at <a
                                     href="mailto:bcool@admin.rochester.edu">bcool@admin.rochester.edu</a> or +1 (585)
-                                275-8523. Please click <Link href="/spiritual-life/confession"><a>here</a></Link> for some
+                                275-8523. Please click <Link href="/spiritual-life/confession" passHref><a>here</a></Link> for some
                                 penitential resources.</p>
                         </div>
                         <div className="col-sm-6">
