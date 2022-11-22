@@ -32,7 +32,7 @@ const banners = (req, res) => {
                 {
                                     imageSrc: '/images/index/22112022/3.png',
                                     mobileImageSrc: '/images/index/22112022/3.png',
-                                    description: 'Christmas Midnight Mass',
+                                    description: 'Christmas-Midnight Mass',
 
                                 }
 
