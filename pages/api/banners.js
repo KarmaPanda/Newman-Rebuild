@@ -9,20 +9,35 @@ const banners = (req, res) => {
                     imageSrc: '/images/index/11022022/Fall2022banner-02.png',
                     mobileImageSrc: '/images/index/11022022/Fall2022bannerMobile-06.png',
                     description: 'Home Away from Home',
-                    link: '/orientation'
+
                 },
                 {
                     imageSrc: '/images/index/11022022/Fall2022banner-03.png',
                     mobileImageSrc: '/images/index/11022022/Fall2022bannerMobile-08.png',
                     description: 'Building Project',
-                    link: '/building'
+
                 },
                 {
-                    imageSrc: '/images/index/11022022/Fall2022banner-04.png',
-                    mobileImageSrc: '/images/index/11022022/Fall2022bannerMobile-07.png',
-                    description: 'All Souls Month',
-                    link: '/orientation'
-                }
+                    imageSrc: '/images/index/22112022/1.png',
+                    mobileImageSrc: '/images/index/22112022/1.png',
+                    description: 'Day of Penance',
+
+                },
+                {
+                                    imageSrc: '/images/index/22112022/2.png',
+                                    mobileImageSrc: '/images/index/22112022/2.png',
+                                    description: 'Christmas Eve',
+
+                },
+                {
+                                    imageSrc: '/images/index/22112022/3.png',
+                                    mobileImageSrc: '/images/index/22112022/3.png',
+                                    description: 'Christmas Midnight Mass',
+
+                                }
+
+
+
             ]
         }
     )
