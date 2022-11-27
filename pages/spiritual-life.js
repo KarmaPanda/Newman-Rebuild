@@ -2,6 +2,7 @@ import Head from "next/head";
 import Footer from "../components/Footer"
 import SubPageCard from "../components/SubPageCard";
 
+
 export default function SpiritualLife() {
     return (
         <div>
@@ -38,7 +39,7 @@ export default function SpiritualLife() {
                                 confession anytime by appointment; to do so, please contact
                                 Fr. Brian Cool at <a
                                     href="mailto:bcool@admin.rochester.edu">bcool@admin.rochester.edu</a> or +1 (585)
-                                275-8523. Please click <a href="/spiritual-life/confession">here</a> for some
+                                275-8523. Please click <a href="">here</a> for some
                                 penitential resources.</p>
                         </div>
                         <div className="col-sm-6">
