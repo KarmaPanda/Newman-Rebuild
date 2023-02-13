@@ -46,18 +46,8 @@ export default function Staff() {
                 "email": "mandre20@ur.rochester.edu",
                 "phone": "585-275-8515"
             },
-            {
-                "name": "Kate Somerville",
-                "image": "/images/groups/staff/kate.jpg",
-                "description": `Kate joins the Newman Catholic Community as Office &amp; Advancement Manager, bringing over 4 years of
-                experience in nonprofit administration. She resides in the Neighborhood of the Arts with her two rescue
-                cats Juniper and Mimi. She enjoys watching the Buffalo Bills and is an enthusiastic fan of hockey,
-                especially the Rochester Americans and Buffalo Sabres. On the weekends, you can find her combing
-                through antique and thrift stores, visiting Lake Ontario, or enjoying museums and socializing with
-                friends.`,
-                "email": "Ksomerv2@ur.rochester.edu",
-                "phone": "585-275-8515"
-            },/*
+            
+            /*
             {
                 "name": "",
                 "image": "/images/groups/",

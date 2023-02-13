@@ -5,28 +5,18 @@ const banners = (req, res) => {
     res.status(200).json(
         {
             banners: [
-                {
-                    imageSrc: '/images/index/11022022/Fall2022banner-02.png',
-                    mobileImageSrc: '/images/index/11022022/Fall2022bannerMobile-06.png',
-                    description: 'Home Away from Home',
-
-                },
+            
                 {
                     imageSrc: '/images/index/11022022/Fall2022banner-03.png',
                     mobileImageSrc: '/images/index/11022022/Fall2022bannerMobile-08.png',
                     description: 'Building Project',
 
+                    link:"/building"
                 },
                 {
                     imageSrc: '/images/index/22112022/1.png',
                     mobileImageSrc: '/images/index/22112022/1.png',
                     description: 'Day of Penance',
-
-                },
-                {
-                                    imageSrc: '/images/index/22112022/2.png',
-                                    mobileImageSrc: '/images/index/22112022/2.png',
-                                    description: 'Christmas Eve',
 
                 },
                 {
