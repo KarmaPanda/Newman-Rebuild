@@ -14,15 +14,15 @@ const banners = (req, res) => {
                     link:"/building"
                 },
                 {
-                    imageSrc: '/images/index/22112022/1.png',
-                    mobileImageSrc: '/images/index/22112022/1.png',
+                    imageSrc: '/images/index/11022022/New2.png',
+                    mobileImageSrc: '/images/index/11022022/New2.png',
                     description: 'Day of Penance',
 
                 },
                 {
-                                    imageSrc: '/images/index/22112022/3.png',
-                                    mobileImageSrc: '/images/index/22112022/3.png',  
-                                    description: 'Christmas-Midnight Mass',
+                    imageSrc: '/images/index/11022022/New1.png',
+                    mobileImageSrc: '/images/index/11022022/New1.png',  
+                    description: 'Ash Wednesday. 2023',
 
                                 }
 
