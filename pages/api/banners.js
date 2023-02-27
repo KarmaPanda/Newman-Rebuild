@@ -16,7 +16,7 @@ const banners = (req, res) => {
                 {
                     imageSrc: '/images/index/11022022/New2.png',
                     mobileImageSrc: '/images/index/11022022/New2.png',
-                    description: 'Day of Penance',
+                    description: 'Schedule',
 
                 },
                 {
