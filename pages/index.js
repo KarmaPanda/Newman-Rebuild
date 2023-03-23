@@ -26,7 +26,7 @@ export default function Home() {
             {/*<TextSignUp/>*/}
             <WeeklySchedule />
             {/*<SeniorReflectionCarousel/>*/}
-            <StudentTestimonialCarousel />
+            {/* <StudentTestimonialCarousel /> */}
             <WhatIsNewmanCarousel />
             <MissionVisionStatement />
 
@@ -80,11 +80,11 @@ export default function Home() {
                                 <a href="https://www.linkedin.com/company/urnewman" target="_blank" rel="noreferrer"
                                 ><i className="fa fa-linkedin-square fa-5x" aria-hidden="true" /></a>
                             </div>
-                            <div className="col-sm">
+                            {/* <div className="col-sm">
                                 <a href="https://www.youtube.com/c/CatholicNewmanCommunityattheUniversityofRochester"
                                     target="_blank" rel="noreferrer"><i
                                         className="fa fa-youtube-play fa-5x" aria-hidden="true" /></a>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                     <div className="row mb-5">
