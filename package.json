@@ -29,7 +29,6 @@
     "react": "^18",
     "react-bootstrap": "^2.4.0",
     "react-dom": "18",
-    "react-paypal-button-v2": "^2.6.3",
     "sass": "^1.50.0",
     "sequelize": "^6.18.0",
     "sequelize-cli": "^6.4.1",

@@ -2,7 +2,9 @@
 
 Open source work-in-progress rebuild of https://urnewman.org/
 
-Now deployed as current production server replacing https://urnewman-legacy.herokuapp.com/
+No longer maintained, but can still view this project at https://urnewman-legacy.vercel.app/
+
+~~Now deployed as current production server replacing https://urnewman-legacy.herokuapp.com/~~
 
 Built with Next.js React Framework.
 
