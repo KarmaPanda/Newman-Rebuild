@@ -14,7 +14,7 @@ export default function Building() {
         setLoading(false)
     }, [])
 
-    return (!loading ?
+    return !loading ?
         <div>
             <Head>
                 <title>UR Newman - Building</title>
@@ -27,7 +27,7 @@ export default function Building() {
             </Head>
 
             <header className={styles.headerContent}>
-                <Link href="https://www.rochester.edu/advancement/" passHref><img src="../images/building/u-of-r-logo.png" alt="University of Rochester"/></Link>
+                <Link href="https://www.rochester.edu/advancement/" passHref legacyBehavior><img src="../images/building/u-of-r-logo.png" alt="University of Rochester"/></Link>
             </header>
 
             <main>
@@ -142,7 +142,10 @@ export default function Building() {
                             <iframe src="https://drive.google.com/file/d/1ej7MekktPps_Ad9TxQwHSObbH5VfYkgp/preview" width="100%" height="560px"></iframe>
                             <div className={`py-5 col ${styles.utopiaSubhead}`}>
                                 <h3><strong>Help make this project a complete success—donate today.</strong></h3>
-                                <Link href="https://securelb.imodules.com/s/1676/giving19/giving19.aspx?sid=1676&gid=2&pgid=7030&cid=10728&sort=1&bledit=1&dids=805&appealcode=21C04" passHref>
+                                <Link
+                                    href="https://securelb.imodules.com/s/1676/giving19/giving19.aspx?sid=1676&gid=2&pgid=7030&cid=10728&sort=1&bledit=1&dids=805&appealcode=21C04"
+                                    passHref
+                                    legacyBehavior>
                                     <button className={styles.donateBtn}>Donate Here</button>
                                 </Link>
                             </div>
@@ -284,6 +287,5 @@ export default function Building() {
             </div>
 
             <Footer />
-        </div> : null
-    )
+        </div> : null;
 }

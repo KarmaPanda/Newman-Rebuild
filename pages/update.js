@@ -31,13 +31,22 @@ export default function Update() {
                     </Row>
                     <Row className="py-5 text-center">
                         <Col>
-                            <Link href="https://secure.lglforms.com/form_engine/s/UMpzeAs7RgPuKBQ6edk2Ug" passHref><Button>River Campus or Eastman Campus</Button></Link>
+                            <Link
+                                href="https://secure.lglforms.com/form_engine/s/UMpzeAs7RgPuKBQ6edk2Ug"
+                                passHref
+                                legacyBehavior><Button>River Campus or Eastman Campus</Button></Link>
                         </Col>
                         <Col>
-                            <Link href="https://secure.lglforms.com/form_engine/s/DNO0pj8hFLfNtS0XhzQz_A" passHref><Button>Medical Center Campus</Button></Link>
+                            <Link
+                                href="https://secure.lglforms.com/form_engine/s/DNO0pj8hFLfNtS0XhzQz_A"
+                                passHref
+                                legacyBehavior><Button>Medical Center Campus</Button></Link>
                         </Col>
                         <Col>
-                            <Link href="https://secure.lglforms.com/form_engine/s/zGd9Z7mX7JBVi_JsaeaNmQ" passHref><Button>Update Existing Information</Button></Link>
+                            <Link
+                                href="https://secure.lglforms.com/form_engine/s/zGd9Z7mX7JBVi_JsaeaNmQ"
+                                passHref
+                                legacyBehavior><Button>Update Existing Information</Button></Link>
                         </Col>
                     </Row>
                 </Container>
@@ -47,5 +56,5 @@ export default function Update() {
 
             <Footer />
         </div>
-    )
+    );
 }

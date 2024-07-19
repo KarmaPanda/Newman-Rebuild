@@ -131,7 +131,7 @@ export default function Orientation() {
 
                     <Row className="text-center p-5">
                         <Col>
-                            <Link href="http://www.urnewman.org/update" passHref>
+                            <Link href="http://www.urnewman.org/update" passHref legacyBehavior>
                                 <Button className={styles.registerBtn} variant="light">
                                     Register with our community here!
                                 </Button>
@@ -255,5 +255,5 @@ export default function Orientation() {
 
             <Footer />
         </div>
-    )
+    );
 }

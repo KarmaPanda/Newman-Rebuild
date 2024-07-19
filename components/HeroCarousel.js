@@ -23,17 +23,19 @@ export default function HeroCarousel() {
             </div>
             <div className="carousel-inner">
                 {banners.map(function (obj, key) {
-                    return <div className={`carousel-item${key == 0 ? " active" : ""}`} key={key}>
-                        {obj.link !== undefined ? <Link href={obj.link} passHref>
-                            <picture>
+                    return (
+                        <div className={`carousel-item${key == 0 ? " active" : ""}`} key={key}>
+                            {obj.link !== undefined ? <Link href={obj.link} passHref legacyBehavior>
+                                <picture>
+                                    <source media="(min-width:1000px)" srcSet={obj.imageSrc} />
+                                    <img width="100%" src={obj.mobileImageSrc} alt={obj.description} />
+                                </picture>
+                            </Link> : <picture>
                                 <source media="(min-width:1000px)" srcSet={obj.imageSrc} />
                                 <img width="100%" src={obj.mobileImageSrc} alt={obj.description} />
-                            </picture>
-                        </Link> : <picture>
-                            <source media="(min-width:1000px)" srcSet={obj.imageSrc} />
-                            <img width="100%" src={obj.mobileImageSrc} alt={obj.description} />
-                        </picture>}
-                    </div>
+                            </picture>}
+                        </div>
+                    );
                 })}
             </div>
             <button className="carousel-control-prev" type="button" data-bs-target="#HeroCarousel" data-bs-slide="prev">
@@ -45,5 +47,5 @@ export default function HeroCarousel() {
                 <span className="visually-hidden">Next</span>
             </button>
         </div>
-    )
+    );
 }

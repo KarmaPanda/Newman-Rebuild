@@ -24,12 +24,12 @@ export default function PaymentSuccess() {
                         <p><i className="far fa-check-circle fa-10x" style={{ color: 'green' }}></i></p>
                         <h2 className="">Thank for your donation!</h2>
                         <p>Your donation has been entered into our database.</p>
-                        <Link href="/" passHref><button className="btn btn-primary btn-lg btn-block">Click here to return to main page</button></Link>
+                        <Link href="/" passHref legacyBehavior><button className="btn btn-primary btn-lg btn-block">Click here to return to main page</button></Link>
                         <p><small>*This is currently our beta website, so not every page is complete on this. Visit <Link href="https://urnewman.org/">here</Link> for our main website.</small></p>
                     </div>
                 </main>
             </div>
 
         </div>
-    )
+    );
 }

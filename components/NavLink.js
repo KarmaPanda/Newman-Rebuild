@@ -22,10 +22,10 @@ function NavLink({ href, exact, children, ...props }) {
     }
 
     return (
-        <Link href={href}>
-            <a {...props}>
-                {children}
-            </a>
-        </Link>
+        (<Link href={href} {...props}>
+
+            {children}
+
+        </Link>)
     );
 }

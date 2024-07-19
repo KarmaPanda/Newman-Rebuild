@@ -34,8 +34,14 @@ export default function JHN() {
                                 <h3>Learn more about St. John Henry Cardinal Newman by watching the video and visiting the links below.</h3>
 
                                 <div className="col my-2">
-                                    <Link href="https://www.newmancanonisation.com/newmans-life" passHref><button className="btn btn-info m-2">Read about St. Newman&apos;s Life in detail here</button></Link>
-                                    <Link href="http://www.newmanreader.org/works/index.html" passHref><button className="btn btn-info m-2">Read many of St. Newman&apos;s works here</button></Link>
+                                    <Link
+                                        href="https://www.newmancanonisation.com/newmans-life"
+                                        passHref
+                                        legacyBehavior><button className="btn btn-info m-2">Read about St. Newman&apos;s Life in detail here</button></Link>
+                                    <Link
+                                        href="http://www.newmanreader.org/works/index.html"
+                                        passHref
+                                        legacyBehavior><button className="btn btn-info m-2">Read many of St. Newman&apos;s works here</button></Link>
                                 </div>
                             </div>
                             <div className="row">
@@ -55,5 +61,5 @@ export default function JHN() {
 
             <Footer />
         </div>
-    )
+    );
 }
