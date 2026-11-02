@@ -1,6 +1,6 @@
 @import "~bootstrap/scss/bootstrap.scss";
-@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
-@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+@import "@glidejs/glide/dist/css/glide.core.css";
+@import "@glidejs/glide/dist/css/glide.theme.css";
 
 a {
     text-decoration: none;
